@@ -3,61 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>BIRRAZO en el Museo de la Industria | La Liga del Centro &amp; CCIC</title>
-    <meta name="description" content="El festival que reúne lo mejor de la cerveza independiente cordobesa, gastronomía, música en vivo y fiesta. Sábado 7 de Noviembre de 18 a 00 h. Entrada libre y gratuita.">
+    <title>BIRRAZO en el Museo de la Industria | Liga del Centro &amp; CCIC</title>
+    <meta name="description" content="Edición Encuentro del Lúpulo. Cervezas independientes cordobesas, gastronomía, música en vivo y fiesta. Sábado 7 de Noviembre de 18 a 00 h. Entrada libre y gratuita.">
 
-    <meta name="theme-color" content="#121510">
+    <meta name="theme-color" content="#DEEE9B">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-    <!-- TIPOGRAFÍAS DE CARÁCTER: SYNE + PLUS JAKARTA SANS + SPACE GROTESK -->
+    <!-- TIPOGRAFÍAS EDITORIALES DE CARTELERÍA INDUSTRIAL: BARLOW CONDENSED + PLUS JAKARTA SANS + SPACE GROTESK -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
 
     <style>
         /* ==========================================================================
-           1. SISTEMA CROMÁTICO: NOCHE INDUSTRIAL, DORADO CERVECERO & VERDE LÚPULO
+           1. SISTEMA CROMÁTICO OFICIAL EXTRAÍDO DE LOS FLYERS Y LOGOS
            ========================================================================== */
         :root {
-            --bg-deep: #121510;
-            --bg-card: rgba(26, 31, 23, 0.78);
-            --bg-card-elevated: #22291E;
-            --bg-card-glass: rgba(30, 37, 26, 0.88);
+            /* Colores de muestra HEX oficiales */
+            --hop-lime-pale: #DEEE9B;     /* Fondo maestro y badges vivos */
+            --hop-cream-soft: #F4F7E6;    /* Fondo base de lectura ultra-claro */
+            --hop-canvas-white: #FFFFFF;  /* Blanco porcelana puro para celdas */
             
-            --color-text-main: #F4F5EF;
-            --color-text-muted: #A8B29C;
-            --color-text-faded: #6E7963;
+            --hop-green-vibrant: #80A020; /* Verde hoja de lúpulo activo */
+            --hop-green-deep: #608020;    /* Verde lúpulo de contraste */
+            --hop-dark-forest: #404020;   /* Verde oliva oscuro industrial */
+            --hop-black-pure: #0E120A;    /* Negro tinta industrial para textos */
             
-            --color-gold: #F2A900;
-            --color-gold-glow: rgba(242, 169, 0, 0.35);
-            --color-amber: #D67A0A;
-            
-            --color-hop-green: #7FA832;
-            --color-hop-deep: #476313;
-            --color-hop-glow: rgba(127, 168, 50, 0.35);
+            --amber-gold: #DE8D37;        /* Tono cerveza y malta tostada */
+            --amber-gold-deep: #B56715;
 
-            --color-iron-border: rgba(244, 245, 239, 0.12);
-            --color-iron-hover: #F2A900;
+            /* Bordes y sombras con aplomo editorial */
+            --border-industrial: rgba(64, 64, 32, 0.22);
+            --border-strong: #404020;
+            --border-black: #0E120A;
 
-            --font-display: 'Syne', sans-serif;
+            --font-poster: 'Barlow Condensed', -apple-system, sans-serif;
             --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
             --font-mono: 'Space Grotesk', monospace;
 
+            --shadow-card: 0 14px 34px -8px rgba(64, 64, 32, 0.12), 0 3px 10px rgba(0, 0, 0, 0.04);
+            --shadow-hover: 0 18px 42px -6px rgba(64, 64, 32, 0.20);
+            --shadow-block: 4px 4px 0px #404020;
             --spring: cubic-bezier(0.16, 1, 0.3, 1);
-            --shadow-subtle: 0 10px 30px rgba(0, 0, 0, 0.35);
-            --shadow-float: 0 16px 36px -10px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08);
-            --shadow-glow-gold: 0 14px 34px -6px rgba(242, 169, 0, 0.40);
-            --shadow-glow-green: 0 14px 34px -6px rgba(127, 168, 50, 0.40);
-        }
-
-        body[data-theme="lupulo"] {
-            --bg-deep: #1B2412;
-            --bg-card: rgba(36, 48, 24, 0.85);
-            --bg-card-elevated: #2E3E1E;
-            --bg-card-glass: rgba(40, 54, 27, 0.92);
-            --color-hop-green: #97C73C;
-            --color-gold: #FFB71B;
         }
 
         * {
@@ -68,108 +56,116 @@
         }
 
         html {
-            background-color: var(--bg-deep);
+            background-color: var(--hop-cream-soft);
             scroll-behavior: smooth;
         }
 
         body {
             font-family: var(--font-sans);
-            color: var(--color-text-main);
-            background-color: var(--bg-deep);
+            color: var(--hop-black-pure);
+            background-color: var(--hop-cream-soft);
             min-height: 100vh;
             min-height: 100dvh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 0 14px 80px;
+            padding: 0 14px 84px;
             overflow-x: hidden;
             position: relative;
-            letter-spacing: -0.015em;
-            transition: background-color 0.35s ease;
+            letter-spacing: -0.01em;
         }
 
         /* ==========================================================================
-           2. PATRÓN DIAGONAL REPETITIVO: CEBADA + CERVEZA FLOTANTE SIMÉTRICA
+           2. PATRÓN DINÁMICO NATURAL INCLINADO A 45° CON AIRE Y ARMONÍA
            ========================================================================== */
-        .ambient-diagonal-drift {
+        .ambient-pattern-stage {
             position: fixed;
-            inset: 0;
+            inset: -40%;
+            width: 180%;
+            height: 180%;
             z-index: 0;
             pointer-events: none;
+            /* Inclinado a 45 grados hacia la izquierda */
+            transform: rotate(-45deg);
             background-image: 
                 url("recursocebada.png"), 
                 url("recursocerveza.png");
-            background-size: 64px 64px, 64px 64px;
-            background-position: 0 0, 32px 32px;
+            background-size: 78px 78px, 72px 72px;
+            /* Espaciado amplio y asimétrico para evitar rigidez */
+            background-position: 0 0, 115px 85px;
             background-repeat: repeat;
-            opacity: 0.055;
-            filter: grayscale(20%);
-            animation: driftDiagonalPattern 45s linear infinite;
+            opacity: 0.14;
+            animation: driftDiagonalLeft 55s linear infinite;
             will-change: background-position;
         }
 
-        @keyframes driftDiagonalPattern {
+        @keyframes driftDiagonalLeft {
             0% {
-                background-position: 0 0, 32px 32px;
+                background-position: 0 0, 115px 85px;
             }
             100% {
-                background-position: 640px 640px, 672px 672px;
+                background-position: 780px 0, 895px 85px;
             }
         }
 
-        /* Velo degradado que enfoca el contenido y resalta los galpones industriales */
-        .ambient-vignette-veil {
+        /* Velo superior suave que mantiene el fondo claro y 100% legible */
+        .ambient-light-veil {
             position: fixed;
             inset: 0;
             z-index: 1;
             pointer-events: none;
-            background: radial-gradient(circle at 50% 15%, rgba(242, 169, 0, 0.08) 0%, transparent 60%),
-                        linear-gradient(180deg, rgba(18, 21, 16, 0.4) 0%, rgba(18, 21, 16, 0.95) 75%, var(--bg-deep) 100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(244, 247, 230, 0.65) 50%, rgba(222, 238, 155, 0.35) 100%);
         }
 
         /* ==========================================================================
-           3. MARQUESINA DE TAPE SUPERIOR CON ALERTA VIVA
+           3. TOP TICKER MARQUEE CON TIPOGRAFÍA DE CARTEL
            ========================================================================== */
-        .marquee-alert-tape {
+        .marquee-strip-flow {
             width: calc(100% + 28px);
             margin-left: -14px;
             margin-right: -14px;
-            background: var(--color-gold);
-            color: #0E100C;
+            background: var(--hop-lime-pale);
+            border-bottom: 2px solid var(--border-strong);
+            color: var(--hop-black-pure);
             overflow: hidden;
-            padding: 8px 0;
+            padding: 9px 0;
             display: flex;
             white-space: nowrap;
             position: relative;
             z-index: 20;
-            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 2px 8px rgba(64, 64, 32, 0.08);
         }
 
-        .marquee-track-flow {
+        .marquee-track-unit {
             display: inline-flex;
-            gap: 28px;
-            animation: tapeScrollInfinite 24s linear infinite;
+            gap: 24px;
+            animation: tickerTape 22s linear infinite;
             will-change: transform;
         }
 
-        .marquee-track-flow span {
-            font-family: var(--font-mono);
-            font-size: 0.72rem;
+        .marquee-track-unit span {
+            font-family: var(--font-poster);
+            font-size: 1.05rem;
             font-weight: 800;
-            letter-spacing: 0.14em;
+            letter-spacing: 0.08em;
             text-transform: uppercase;
             display: inline-flex;
             align-items: center;
-            gap: 14px;
+            gap: 12px;
         }
 
-        @keyframes tapeScrollInfinite {
+        .bullet-star {
+            color: var(--hop-green-deep);
+            font-size: 0.9rem;
+        }
+
+        @keyframes tickerTape {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
         }
 
         /* ==========================================================================
-           4. SHELL CONTENEDOR MOBILE-FIRST
+           4. SHELL PRINCIPAL
            ========================================================================== */
         .master-hub-shell {
             width: 100%;
@@ -180,297 +176,288 @@
             z-index: 10;
             position: relative;
             margin: 0 auto;
+            padding-top: 14px;
         }
 
         /* ==========================================================================
-           5. TOP CONTROLS & LOGO INSTITUCIONAL LIGA DEL CENTRO
+           5. TOP DECK: LIGA DEL CENTRO + CCIC
            ========================================================================== */
-        .top-deck-controls {
+        .top-institutional-bar {
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 2px 2px;
             gap: 8px;
         }
 
-        .organizer-pill-anchor {
+        .pill-organizer-btn {
+            background: var(--hop-canvas-white);
+            border: 1.5px solid var(--border-strong);
+            border-radius: 999px;
+            padding: 6px 14px;
+            text-decoration: none;
+            color: var(--hop-black-pure);
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: var(--bg-card);
-            border: 1px solid var(--color-iron-border);
+            box-shadow: 2px 2px 0px var(--border-strong);
+            transition: all 0.22s var(--spring);
+        }
+
+        .pill-organizer-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 3px 3px 0px var(--border-strong);
+            background: var(--hop-lime-pale);
+        }
+
+        .organizer-icon-svg {
+            width: 19px;
+            height: 19px;
+            display: block;
+            fill: var(--hop-black-pure);
+        }
+
+        .organizer-name-text {
+            font-family: var(--font-poster);
+            font-size: 0.95rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .badge-live-countdown {
+            background: var(--hop-lime-pale);
+            border: 1.5px solid var(--border-strong);
             border-radius: 999px;
             padding: 6px 12px;
-            text-decoration: none;
-            color: var(--color-text-main);
-            transition: all 0.25s var(--spring);
-            backdrop-filter: blur(8px);
-        }
-
-        .organizer-pill-anchor:hover {
-            border-color: var(--color-gold);
-            transform: translateY(-2px);
-        }
-
-        .organizer-svg-icon {
-            width: 22px;
-            height: 22px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .organizer-svg-icon svg {
-            width: 100%;
-            height: 100%;
-            fill: #FFFFFF;
-        }
-
-        .organizer-label {
             font-family: var(--font-mono);
             font-size: 0.68rem;
             font-weight: 800;
-            letter-spacing: 0.08em;
             text-transform: uppercase;
-        }
-
-        .theme-pill-action {
-            background: var(--bg-card);
-            border: 1px solid var(--color-iron-border);
-            border-radius: 999px;
-            padding: 6px 11px;
-            font-family: var(--font-mono);
-            font-size: 0.65rem;
-            font-weight: 800;
             letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: var(--color-text-main);
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            cursor: pointer;
-            transition: all 0.25s var(--spring);
         }
 
-        .theme-pill-action:hover {
-            border-color: var(--color-gold);
-            transform: translateY(-2px);
-        }
-
-        .theme-led-pulse {
+        .beacon-core {
             width: 7px;
             height: 7px;
             border-radius: 50%;
-            background: var(--color-gold);
-            box-shadow: 0 0 10px var(--color-gold);
+            background: var(--hop-green-vibrant);
+            animation: pulseRadio 1.8s infinite;
+        }
+
+        @keyframes pulseRadio {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(0.7); opacity: 0.4; }
         }
 
         /* ==========================================================================
-           6. HERO BRAND MONUMENT (LOGO OFICIAL BIRRAZO + SELLO CCIC)
+           6. BRAND HERO MONUMENT
            ========================================================================== */
-        .brand-monument-deck {
+        .hero-monument-card {
+            background: var(--hop-canvas-white);
+            border: 2px solid var(--border-strong);
+            border-radius: 26px;
+            padding: 22px 18px 18px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 6px 4px 2px;
-            gap: 12px;
+            box-shadow: var(--shadow-block);
+            position: relative;
+            overflow: hidden;
         }
 
-        .logo-birrazo-stage {
+        .hero-monument-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 7px;
+            background: linear-gradient(90deg, var(--hop-green-vibrant), var(--hop-lime-pale), var(--amber-gold));
+        }
+
+        .logo-birrazo-center {
             width: 100%;
-            max-width: 320px;
+            max-width: 310px;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
-            filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.45));
-            animation: slowFloatBreath 6s ease-in-out infinite alternate;
+            margin-bottom: 8px;
+            cursor: pointer;
+            filter: drop-shadow(0 4px 10px rgba(64, 64, 32, 0.12));
+            transition: transform 0.3s var(--spring);
         }
 
-        @keyframes slowFloatBreath {
-            0% { transform: translateY(0px) scale(1); }
-            50% { transform: translateY(-3px) scale(1.015); }
-            100% { transform: translateY(0px) scale(1); }
+        .logo-birrazo-center:hover {
+            transform: scale(1.02);
         }
 
-        .logo-birrazo-img {
+        .logo-birrazo-center img {
             width: 100%;
             height: auto;
             display: block;
         }
 
-        .hero-title-group {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .edition-badge-live {
-            background: rgba(127, 168, 50, 0.16);
-            border: 1px solid rgba(127, 168, 50, 0.38);
-            color: #C2E877;
-            padding: 5px 12px;
-            border-radius: 999px;
-            font-family: var(--font-mono);
-            font-size: 0.66rem;
-            font-weight: 800;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
+        .hero-title-edition {
             display: inline-flex;
             align-items: center;
-            gap: 6px;
-        }
-
-        .pulse-core-dot {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: #88B324;
-            box-shadow: 0 0 8px #88B324;
-            animation: pulseRadio 1.7s infinite;
-        }
-
-        @keyframes pulseRadio {
-            0%, 100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(0.75); opacity: 0.4; }
-        }
-
-        .hero-lead-summary {
-            font-size: 0.86rem;
-            color: var(--color-text-muted);
-            line-height: 1.45;
-            max-width: 92%;
+            background: var(--hop-lime-pale);
+            border: 1.5px solid var(--border-strong);
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-family: var(--font-poster);
+            font-size: 1rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--hop-dark-forest);
             margin-top: 4px;
         }
 
-        .hero-lead-summary strong {
-            color: var(--color-text-main);
+        .hero-tagline-motto {
+            font-size: 0.88rem;
+            line-height: 1.45;
+            color: var(--hop-dark-forest);
+            max-width: 92%;
+            margin-top: 8px;
+            font-weight: 600;
         }
 
-        .badges-capsule-row {
+        .hero-tagline-motto strong {
+            color: var(--hop-black-pure);
+            font-weight: 800;
+        }
+
+        .hero-badges-row {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 7px;
             flex-wrap: wrap;
-            margin-top: 6px;
+            margin-top: 12px;
         }
 
-        .pill-badge-seal {
-            background: var(--bg-card);
-            border: 1px solid var(--color-iron-border);
+        .pill-micro-seal {
+            background: var(--hop-cream-soft);
+            border: 1px solid var(--border-strong);
             border-radius: 999px;
-            padding: 5px 11px;
-            font-size: 0.68rem;
+            padding: 4px 10px;
+            font-family: var(--font-mono);
+            font-size: 0.66rem;
             font-weight: 800;
-            color: var(--color-text-main);
-            letter-spacing: 0.04em;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
+            color: var(--hop-black-pure);
+            letter-spacing: 0.03em;
         }
 
         /* ==========================================================================
-           7. VIDEO REEL SHOWCASE CON CONTROLES SUAVES
+           7. VIDEO REEL CONTENEDOR DE ALTO IMPACTO
            ========================================================================== */
-        .video-reel-container {
+        .reel-player-stage {
             width: 100%;
-            height: 380px;
-            border-radius: 24px;
+            height: 385px;
+            border-radius: 22px;
             position: relative;
             overflow: hidden;
-            border: 1px solid var(--color-iron-border);
-            box-shadow: var(--shadow-float);
+            border: 2px solid var(--border-strong);
+            box-shadow: var(--shadow-block);
             background: #000000;
         }
 
-        .video-ambient-player {
+        .reel-video-element {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center;
-            filter: brightness(0.92);
         }
 
-        .video-gradient-overlay {
+        .reel-vignette {
             position: absolute;
             inset: 0;
-            background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.40) 50%, rgba(18,21,16,0.92) 100%);
+            background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.2) 45%, rgba(0,0,0,0.85) 100%);
             pointer-events: none;
             z-index: 2;
         }
 
-        .video-content-footer {
+        .reel-overlay-content {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 18px;
+            padding: 16px 18px;
             z-index: 3;
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
             gap: 12px;
+            color: #FFFFFF;
         }
 
-        .video-text-meta {
+        .reel-meta-left {
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 3px;
         }
 
-        .video-pill-tag {
+        .reel-live-tag {
             align-self: flex-start;
-            font-family: var(--font-mono);
-            font-size: 0.62rem;
+            font-family: var(--font-poster);
+            font-size: 0.88rem;
             font-weight: 800;
-            letter-spacing: 0.12em;
+            letter-spacing: 0.08em;
             text-transform: uppercase;
             padding: 3px 9px;
             border-radius: 999px;
-            background: var(--color-gold);
-            color: #0E100C;
+            background: var(--hop-lime-pale);
+            color: #0E120A;
         }
 
-        .video-title-bold {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
+        .reel-title-head {
+            font-family: var(--font-poster);
+            font-size: 1.55rem;
             font-weight: 900;
-            line-height: 1.15;
+            line-height: 1.05;
             text-transform: uppercase;
+            letter-spacing: 0.02em;
         }
 
-        .video-controls-bubble {
-            display: flex;
-            gap: 8px;
+        .reel-caption-sub {
+            font-size: 0.74rem;
+            color: #E6EAD4;
+            font-weight: 500;
         }
 
-        .video-btn-action {
-            width: 42px;
-            height: 42px;
+        .audio-circular-switch {
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.20);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            backdrop-filter: blur(8px);
-            color: #FFFFFF;
+            background: var(--hop-lime-pale);
+            border: 2px solid var(--border-strong);
+            color: var(--hop-black-pure);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.90rem;
             cursor: pointer;
-            transition: all 0.2s ease;
+            box-shadow: 2px 2px 0px var(--border-strong);
+            transition: transform 0.2s var(--spring);
+            flex-shrink: 0;
         }
 
-        .video-btn-action:hover {
-            transform: scale(1.1);
-            background: var(--color-gold);
-            color: #000000;
+        .audio-circular-switch:hover {
+            transform: scale(1.08);
+        }
+
+        .audio-circular-switch svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
         }
 
         /* ==========================================================================
-           8. GRILLA BENTO DINÁMICA DE INFORMACIÓN CRUCIAL
+           8. GRILLA BENTO MORFOLÓGICA CON IDENTIDAD
            ========================================================================== */
         .morph-bento-grid {
             display: grid;
@@ -478,168 +465,158 @@
             gap: 12px;
         }
 
-        .bento-cell {
+        .bento-cell-card {
             padding: 18px 16px;
-            border-radius: 20px;
+            border-radius: 22px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             text-decoration: none;
             position: relative;
             overflow: hidden;
-            border: 1px solid var(--color-iron-border);
-            box-shadow: var(--shadow-subtle);
-            transition: all 0.28s var(--spring);
+            border: 2px solid var(--border-strong);
+            box-shadow: var(--shadow-block);
+            transition: all 0.25s var(--spring);
             min-height: 148px;
+            color: var(--hop-black-pure);
         }
 
-        .bento-cell:hover {
-            transform: translateY(-4px);
-            border-color: var(--color-iron-hover);
+        .bento-cell-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 6px 6px 0px var(--border-strong);
         }
 
-        /* 1. HORARIO & ACCESO (VERDE LÚPULO) */
-        .cell-schedule {
-            background: linear-gradient(150deg, #263816 0%, #16240C 100%);
-            color: #FFFFFF;
-            border-color: rgba(127, 168, 50, 0.35);
+        /* 1. HORARIOS & INGRESO: VERDE LÚPULO PÁLIDO */
+        .cell-time-venue {
+            background: var(--hop-lime-pale);
         }
 
-        .cell-schedule::after {
-            content: '';
-            position: absolute;
-            top: -20px;
-            right: -20px;
-            width: 90px;
-            height: 90px;
-            background: radial-gradient(circle, rgba(127, 168, 50, 0.3) 0%, transparent 70%);
-            pointer-events: none;
+        /* 2. PINTAS & BARRA: BLANCO PORCELANA CON BORDE INTENSO */
+        .cell-beer-pricing {
+            background: var(--hop-canvas-white);
         }
 
-        /* 2. PINTAS & PRECIOS (DORADO AMBARINO) */
-        .cell-pricing {
-            background: linear-gradient(150deg, #442E06 0%, #291A02 100%);
-            color: #FFFFFF;
-            border-color: rgba(242, 169, 0, 0.35);
-        }
-
-        .cell-pricing .sticker-beer-badge {
+        .beer-floating-sticker {
             position: absolute;
             right: 8px;
             bottom: 8px;
-            width: 52px;
+            width: 58px;
             height: auto;
-            opacity: 0.9;
-            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+            transform: rotate(-10deg);
+            filter: drop-shadow(2px 3px 0px rgba(64, 64, 32, 0.25));
             transition: transform 0.3s ease;
         }
 
-        .cell-pricing:hover .sticker-beer-badge {
-            transform: scale(1.12) rotate(6deg);
+        .cell-beer-pricing:hover .beer-floating-sticker {
+            transform: rotate(0deg) scale(1.1);
         }
 
         /* 3. BANDA LA JAMBOREE */
-        .cell-jamboree {
-            background: var(--bg-card);
-            color: var(--color-text-main);
+        .cell-band-jamboree {
+            background: var(--hop-canvas-white);
         }
 
         /* 4. BANDA MUSHA SOUL */
-        .cell-musha {
-            background: var(--bg-card);
-            color: var(--color-text-main);
+        .cell-band-musha {
+            background: var(--hop-canvas-white);
         }
 
-        /* 5. TARJETA COMPLETA: CÓMO LLEGAR (MUSEO DE LA INDUSTRIA) */
-        .cell-wide-location {
+        /* 5. CÓMO LLEGAR: FORMATO ANCHO CON CONTRASTE SOBERANO */
+        .cell-wide-navigation {
             grid-column: span 2;
             min-height: auto;
-            background: linear-gradient(160deg, #242A20 0%, #181E15 100%);
-            border: 1px solid rgba(242, 169, 0, 0.3);
-            border-left: 6px solid var(--color-gold);
+            background: var(--hop-dark-forest);
+            border: 2px solid var(--border-black);
+            color: #FFFFFF;
             padding: 18px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 14px;
+            text-decoration: none;
+            box-shadow: var(--shadow-block);
         }
 
-        .cell-top-row {
+        .cell-wide-navigation:hover {
+            background: #333318;
+        }
+
+        .cell-top-meta {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 6px;
         }
 
-        .cell-mini-tag {
-            font-family: var(--font-mono);
-            font-size: 0.65rem;
+        .cell-chip-tag {
+            font-family: var(--font-poster);
+            font-size: 0.88rem;
             font-weight: 800;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.08em;
             text-transform: uppercase;
         }
 
         .cell-arrow-icon {
             font-family: var(--font-mono);
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             font-weight: 800;
-            transition: transform 0.25s ease;
+            transition: transform 0.22s ease;
         }
 
-        .bento-cell:hover .cell-arrow-icon {
+        .bento-cell-card:hover .cell-arrow-icon {
             transform: translate(3px, -3px);
         }
 
-        .cell-hero-title {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
+        .cell-poster-headline {
+            font-family: var(--font-poster);
+            font-size: 1.55rem;
             font-weight: 900;
-            line-height: 1.12;
-            letter-spacing: -0.01em;
+            line-height: 1.05;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
         }
 
-        .cell-hero-desc {
+        .cell-body-caption {
             font-size: 0.76rem;
-            margin-top: 5px;
-            line-height: 1.4;
-            color: var(--color-text-muted);
+            margin-top: 4px;
+            line-height: 1.35;
+            font-weight: 600;
         }
 
         /* ==========================================================================
-           9. SHOWCASE DE CERVECERÍAS & FOOD TRUCKS
+           9. SHOWCASE HORIZONTAL: CERVECERÍAS & FOOD TRUCKS
            ========================================================================== */
-        .showcase-flow-deck {
+        .showcase-flow-box {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            margin-top: 4px;
+            gap: 10px;
         }
 
-        .showcase-header-row {
+        .showcase-nav-row {
             display: flex;
             align-items: baseline;
             justify-content: space-between;
             padding: 0 4px;
         }
 
-        .showcase-title-main {
-            font-family: var(--font-display);
-            font-size: 1.18rem;
+        .showcase-title-serif {
+            font-family: var(--font-poster);
+            font-size: 1.35rem;
             font-weight: 900;
             text-transform: uppercase;
-            letter-spacing: -0.01em;
+            letter-spacing: 0.04em;
         }
 
-        .showcase-sub-tag {
+        .showcase-link-callout {
             font-family: var(--font-mono);
             font-size: 0.70rem;
             font-weight: 800;
-            color: var(--color-gold);
+            color: var(--hop-green-deep);
             text-transform: uppercase;
             letter-spacing: 0.08em;
         }
 
-        .horizontal-snap-carousel {
+        .horizontal-snap-track {
             display: flex;
             gap: 12px;
             overflow-x: auto;
@@ -649,93 +626,96 @@
             -webkit-overflow-scrolling: touch;
         }
 
-        .horizontal-snap-carousel::-webkit-scrollbar { display: none; }
+        .horizontal-snap-track::-webkit-scrollbar { display: none; }
 
-        .brewery-card-tile {
+        .brewery-porcelain-card {
             flex: 0 0 190px;
             scroll-snap-align: start;
-            background: var(--bg-card);
-            border: 1px solid var(--color-iron-border);
+            background: var(--hop-canvas-white);
+            border: 2px solid var(--border-strong);
             border-radius: 18px;
             padding: 12px;
             display: flex;
             flex-direction: column;
             gap: 8px;
             text-decoration: none;
-            color: var(--color-text-main);
+            color: var(--hop-black-pure);
+            box-shadow: 3px 3px 0px var(--border-strong);
             transition: all 0.25s var(--spring);
-            box-shadow: var(--shadow-subtle);
         }
 
-        .brewery-card-tile:hover {
-            transform: translateY(-4px);
-            border-color: var(--color-gold);
+        .brewery-porcelain-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 5px 5px 0px var(--border-strong);
         }
 
-        .card-poster-frame {
+        .card-image-window {
             width: 100%;
             height: 140px;
             border-radius: 12px;
             overflow: hidden;
-            background: #191E16;
+            background: var(--hop-cream-soft);
+            border: 1px solid var(--border-industrial);
             position: relative;
         }
 
-        .card-poster-frame img {
+        .card-image-window img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.4s ease;
         }
 
-        .brewery-card-tile:hover .card-poster-frame img {
+        .brewery-porcelain-card:hover .card-image-window img {
             transform: scale(1.08);
         }
 
-        .card-corner-badge {
+        .badge-corner-type {
             position: absolute;
             top: 7px;
             left: 7px;
-            font-family: var(--font-mono);
-            font-size: 0.58rem;
+            font-family: var(--font-poster);
+            font-size: 0.78rem;
             font-weight: 800;
-            padding: 3px 8px;
+            padding: 2px 8px;
             border-radius: 999px;
-            background: rgba(0, 0, 0, 0.75);
-            backdrop-filter: blur(6px);
-            color: var(--color-gold);
-            letter-spacing: 0.06em;
+            background: var(--hop-lime-pale);
+            color: var(--hop-black-pure);
+            border: 1px solid var(--border-strong);
+            letter-spacing: 0.04em;
             text-transform: uppercase;
         }
 
-        .card-title-text {
-            font-size: 0.88rem;
+        .card-brewery-name {
+            font-family: var(--font-poster);
+            font-size: 1.18rem;
             font-weight: 800;
-            line-height: 1.25;
+            line-height: 1.15;
             text-transform: uppercase;
         }
 
-        .card-meta-text {
+        .card-brewery-handle {
             font-family: var(--font-mono);
             font-size: 0.68rem;
-            color: var(--color-text-muted);
+            color: var(--hop-green-deep);
+            font-weight: 700;
         }
 
         /* ==========================================================================
-           10. SOCIAL PROOF & GALERÍA VIVA EN EL MUSEO
+           10. GALERÍA DE FOTOS REALES (CON FALLBACK BLINDADO)
            ========================================================================== */
-        .live-photo-deck {
-            background: var(--bg-card);
-            border: 1px solid var(--color-iron-border);
+        .live-photo-box {
+            background: var(--hop-canvas-white);
+            border: 2px solid var(--border-strong);
             border-radius: 24px;
             padding: 18px 16px;
             display: flex;
             flex-direction: column;
             gap: 12px;
-            box-shadow: var(--shadow-subtle);
+            box-shadow: var(--shadow-block);
         }
 
-        .gallery-track-slider {
+        .gallery-horizontal-scroll {
             display: flex;
             gap: 10px;
             overflow-x: auto;
@@ -744,71 +724,67 @@
             scrollbar-width: none;
         }
 
-        .gallery-track-slider::-webkit-scrollbar { display: none; }
+        .gallery-horizontal-scroll::-webkit-scrollbar { display: none; }
 
-        .gallery-photo-item {
-            flex: 0 0 135px;
-            height: 185px;
+        .gallery-tile-item {
+            flex: 0 0 140px;
+            height: 190px;
             scroll-snap-align: start;
             border-radius: 14px;
             overflow: hidden;
             position: relative;
-            background: #191E16;
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: var(--hop-cream-soft);
+            border: 1.5px solid var(--border-strong);
             transition: transform 0.25s ease;
         }
 
-        .gallery-photo-item:hover {
+        .gallery-tile-item:hover {
             transform: scale(1.04);
         }
 
-        .gallery-photo-item img {
+        .gallery-tile-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
         }
 
-        .photo-floating-caption {
+        .gallery-caption-strip {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 8px 6px 6px;
-            background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
-            font-family: var(--font-mono);
-            font-size: 0.62rem;
+            padding: 6px 4px;
+            background: var(--hop-lime-pale);
+            border-top: 1px solid var(--border-strong);
+            font-family: var(--font-poster);
+            font-size: 0.78rem;
             font-weight: 800;
-            color: #FFFFFF;
+            color: var(--hop-black-pure);
             text-align: center;
             text-transform: uppercase;
         }
 
         /* ==========================================================================
-           11. TARJETA INSTITUCIONAL COPA LIGA DEL CENTRO 2026
+           11. TARJETA COPA LIGA DEL CENTRO 2026
            ========================================================================== */
-        .copa-feature-card {
-            background: linear-gradient(160deg, #1A1F16 0%, #10130D 100%);
-            border: 1.5px solid var(--color-iron-border);
+        .copa-banner-enclosure {
+            background: var(--hop-lime-pale);
+            border: 2px solid var(--border-strong);
             border-radius: 22px;
             padding: 20px 18px;
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            box-shadow: var(--shadow-float);
+            gap: 10px;
+            box-shadow: var(--shadow-block);
         }
 
-        .copa-badge-row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .copa-title {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
+        .copa-title-main {
+            font-family: var(--font-poster);
+            font-size: 1.65rem;
             font-weight: 900;
-            color: var(--color-gold);
             text-transform: uppercase;
+            line-height: 1.05;
         }
 
         .copa-buttons-row {
@@ -818,35 +794,35 @@
             margin-top: 4px;
         }
 
-        .btn-copa-action {
-            background: var(--bg-card-elevated);
-            border: 1px solid var(--color-iron-border);
+        .btn-copa-entry {
+            background: var(--hop-canvas-white);
+            border: 1.5px solid var(--border-strong);
             border-radius: 12px;
             padding: 10px 8px;
             text-decoration: none;
-            color: var(--color-text-main);
-            font-family: var(--font-mono);
-            font-size: 0.70rem;
+            color: var(--hop-black-pure);
+            font-family: var(--font-poster);
+            font-size: 0.95rem;
             font-weight: 800;
             text-align: center;
             text-transform: uppercase;
-            transition: all 0.22s var(--spring);
+            box-shadow: 2px 2px 0px var(--border-strong);
+            transition: all 0.2s var(--spring);
         }
 
-        .btn-copa-action:hover {
-            background: var(--color-gold);
-            color: #0E100C;
-            border-color: var(--color-gold);
+        .btn-copa-entry:hover {
             transform: translateY(-2px);
+            background: var(--hop-black-pure);
+            color: #FFFFFF;
         }
 
         /* ==========================================================================
-           12. FOOTER NOBLE & ALIANZAS
+           12. FOOTER NOBLE
            ========================================================================== */
-        .footer-noble-deck {
+        .footer-institutional-monument {
             margin-top: 10px;
             padding-top: 24px;
-            border-top: 1px dashed rgba(242, 169, 0, 0.3);
+            border-top: 2px dashed var(--border-strong);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -854,40 +830,40 @@
             gap: 12px;
         }
 
-        .footer-logos-stack {
+        .footer-logos-row {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 18px;
-            flex-wrap: wrap;
-            max-width: 360px;
+            max-width: 320px;
         }
 
-        .footer-logo-item {
-            height: 38px;
-            width: auto;
-            object-fit: contain;
-            opacity: 0.85;
-            transition: opacity 0.2s ease;
+        .footer-ccic-img {
+            max-width: 240px;
+            height: auto;
+            display: block;
         }
 
-        .footer-logo-item:hover {
-            opacity: 1;
+        .footer-address-caption {
+            font-size: 0.78rem;
+            color: var(--hop-dark-forest);
+            line-height: 1.5;
+            font-weight: 600;
+            max-width: 380px;
         }
 
         .footer-legal-copy {
             font-family: var(--font-mono);
             font-size: 0.65rem;
-            color: var(--color-text-faded);
+            color: var(--hop-dark-forest);
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            line-height: 1.5;
         }
 
         /* ==========================================================================
-           13. BOTÓN FLOTANTE CÓMO LLEGAR (GOOGLE MAPS DIRECTO)
+           13. BOTÓN FLOTANTE CÓMO LLEGAR (DISEÑO SOBERANO SIN EMOJIS)
            ========================================================================== */
-        .floating-action-portal {
+        .floating-pin-portal {
             position: fixed;
             bottom: 20px;
             right: 16px;
@@ -898,436 +874,418 @@
             text-decoration: none;
         }
 
-        .floating-label-pill {
-            background: var(--color-gold);
-            color: #0E100C;
-            font-family: var(--font-mono);
-            font-size: 0.70rem;
-            font-weight: 900;
+        .floating-pill-caption {
+            background: var(--hop-black-pure);
+            color: #FFFFFF;
+            font-family: var(--font-poster);
+            font-size: 0.95rem;
+            font-weight: 800;
             padding: 8px 14px;
             border-radius: 999px;
-            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+            border: 1.5px solid var(--border-strong);
+            box-shadow: 3px 3px 0px var(--border-strong);
             letter-spacing: 0.06em;
             text-transform: uppercase;
         }
 
-        .floating-circle-btn {
-            width: 50px;
-            height: 50px;
+        .floating-circle-glyph {
+            width: 48px;
+            height: 48px;
             border-radius: 50%;
-            background: var(--color-hop-green);
-            color: #FFFFFF;
+            background: var(--hop-lime-pale);
+            border: 2px solid var(--border-strong);
+            color: var(--hop-black-pure);
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 6px 24px rgba(127, 168, 50, 0.5);
+            box-shadow: 3px 3px 0px var(--border-strong);
             transition: transform 0.25s var(--spring);
-            font-size: 1.3rem;
         }
 
-        .floating-action-portal:hover .floating-circle-btn {
+        .floating-pin-portal:hover .floating-circle-glyph {
             transform: scale(1.1) translateY(-2px);
+        }
+
+        .floating-circle-glyph svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
         }
     </style>
 </head>
-<body data-theme="default">
+<body>
 
-    <!-- 1. PATRÓN CINEMÁTICO DIAGONAL CONTINUO (CEBADA + VASO DE CERVEZA) -->
-    <div class="ambient-diagonal-drift" aria-hidden="true"></div>
-    <div class="ambient-vignette-veil" aria-hidden="true"></div>
+    <!-- 1. PATRÓN NATURAL INCLINADO A 45° CON CEBADA Y CERVEZA -->
+    <div class="ambient-pattern-stage" aria-hidden="true"></div>
+    <div class="ambient-light-veil" aria-hidden="true"></div>
 
-    <!-- 2. MARQUESINA DE ALERTA & INFO VIVA -->
-    <aside class="marquee-alert-tape" aria-label="Novedades oficiales del Birrazo">
-        <div class="marquee-track-flow">
-            <span>🔥 VUELVE EL BIRRAZO</span>
-            <span>•</span>
-            <span>SÁBADO 7 DE NOVIEMBRE · 18 A 00 H</span>
-            <span>•</span>
-            <span>MUSEO DE LA INDUSTRIA CÓRDOBA</span>
-            <span>•</span>
-            <span>ENTRADA LIBRE Y GRATUITA</span>
-            <span>•</span>
-            <span>PINTA $5.000 · ECOVASO $1.000</span>
-            <span>•</span>
-            <span>10 CERVECERÍAS INDEPENDIENTES</span>
-            <span>•</span>
-            <span>FOOD TRUCKS &amp; MÚSICA EN VIVO</span>
-            <span>•</span>
-            <span>🔥 VUELVE EL BIRRAZO</span>
-            <span>•</span>
-            <span>SÁBADO 7 DE NOVIEMBRE · 18 A 00 H</span>
-            <span>•</span>
-            <span>MUSEO DE LA INDUSTRIA CÓRDOBA</span>
-            <span>•</span>
+    <!-- 2. MARQUESINA DE TAPE SUPERIOR CON TIPOGRAFÍA DE CARTEL -->
+    <div class="marquee-strip-flow" aria-label="Novedades oficiales del Birrazo">
+        <div class="marquee-track-unit">
+            <span>VUELVE EL BIRRAZO <i class="bullet-star">★</i></span>
+            <span>SÁBADO 7 DE NOVIEMBRE · 18 A 00 H <i class="bullet-star">★</i></span>
+            <span>MUSEO DE LA INDUSTRIA CÓRDOBA <i class="bullet-star">★</i></span>
+            <span>ENTRADA LIBRE Y GRATUITA <i class="bullet-star">★</i></span>
+            <span>PINTA $5.000 · ECOVASO $1.000 <i class="bullet-star">★</i></span>
+            <span>10 CERVECERÍAS INDEPENDIENTES <i class="bullet-star">★</i></span>
+            <span>FOOD TRUCKS &amp; MÚSICA EN VIVO <i class="bullet-star">★</i></span>
+            <span>VUELVE EL BIRRAZO <i class="bullet-star">★</i></span>
+            <span>SÁBADO 7 DE NOVIEMBRE · 18 A 00 H <i class="bullet-star">★</i></span>
+            <span>MUSEO DE LA INDUSTRIA CÓRDOBA <i class="bullet-star">★</i></span>
         </div>
-    </aside>
+    </div>
 
     <!-- 3. SHELL PRINCIPAL MOBILE -->
     <main class="master-hub-shell">
 
-        <!-- HEADER CONTROLS -->
-        <header class="top-deck-controls">
-            <a href="https://www.instagram.com/ligadelcentro.ccic" target="_blank" rel="noopener noreferrer" class="organizer-pill-anchor" onclick="playTap()">
-                <div class="organizer-svg-icon">
-                    <svg viewBox="0 0 694.9 674.64" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M494.7,350.91H205.57c-5.59,0-8.83,6.34-5.55,10.87l51.36,70.84c2.73,3.77,8.36,3.77,11.09,0l45.67-63c2.43-3.35,7.41-3.35,9.84,0l26.53,36.59c2.73,3.77,8.36,3.77,11.09,0l26.6-36.69c2.43-3.35,7.41-3.35,9.84,0l45.75,63.1c2.73,3.77,8.36,3.77,11.09,0l51.36-70.84c3.28-4.53.05-10.87-5.55-10.87Z"/>
-                        <path d="M344.81,551.47l-34.78-47.97c-3.28-4.53-.05-10.87,5.55-10.87h69.56c5.59,0,8.83,6.34,5.55,10.87l-34.78,47.97c-2.73,3.77-8.36,3.77-11.09,0Z"/>
-                        <path d="M344.52,477.07l-32.21-44.43c-3.28-4.53-.05-10.87,5.55-10.87h64.43c5.59,0,8.83,6.34,5.55,10.87l-32.21,44.43c-2.73,3.77-8.36,3.77-11.09,0Z"/>
-                    </svg>
-                </div>
-                <span class="organizer-label">La Liga del Centro</span>
+        <!-- BARRA INSTITUCIONAL SUPERIOR -->
+        <header class="top-institutional-bar">
+            <a href="https://www.instagram.com/ligadelcentro.ccic" target="_blank" rel="noopener noreferrer" class="pill-organizer-btn" onclick="playTap()">
+                <svg class="organizer-icon-svg" viewBox="0 0 694.9 674.64" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M494.7,350.91H205.57c-5.59,0-8.83,6.34-5.55,10.87l51.36,70.84c2.73,3.77,8.36,3.77,11.09,0l45.67-63c2.43-3.35,7.41-3.35,9.84,0l26.53,36.59c2.73,3.77,8.36,3.77,11.09,0l26.6-36.69c2.43-3.35,7.41-3.35,9.84,0l45.75,63.1c2.73,3.77,8.36,3.77,11.09,0l51.36-70.84c3.28-4.53.05-10.87-5.55-10.87Z"/>
+                    <path d="M344.81,551.47l-34.78-47.97c-3.28-4.53-.05-10.87,5.55-10.87h69.56c5.59,0,8.83,6.34,5.55,10.87l-34.78,47.97c-2.73,3.77-8.36,3.77-11.09,0Z"/>
+                    <path d="M344.52,477.07l-32.21-44.43c-3.28-4.53-.05-10.87,5.55-10.87h64.43c5.59,0,8.83,6.34,5.55,10.87l-32.21,44.43c-2.73,3.77-8.36,3.77-11.09,0Z"/>
+                </svg>
+                <span class="organizer-name-text">La Liga del Centro</span>
             </a>
 
-            <button class="theme-pill-action" onclick="toggleBirrazoTheme()" title="Cambiar tema">
-                <span class="theme-led-pulse"></span>
-                <span id="themeLabelText">Lúpulo Mode</span>
-            </button>
+            <div class="badge-live-countdown">
+                <span class="beacon-core"></span>
+                <span>Encuentro del Lúpulo</span>
+            </div>
         </header>
 
-        <!-- HERO MONUMENTO: LOGO OFICIAL BIRRAZO -->
-        <section class="brand-monument-deck">
-            <div class="logo-birrazo-stage" onclick="playTap()">
-                <img src="BIRRAZO - LOGO.png" alt="Birrazo en el Museo de la Industria - Logo Oficial" class="logo-birrazo-img">
+        <!-- HERO MONUMENTO DE MARCA: BIRRAZO EN EL MUSEO -->
+        <section class="hero-monument-card">
+            <div class="logo-birrazo-center" onclick="playTap()">
+                <img src="BIRRAZO - LOGO.png" alt="Birrazo en el Museo de la Industria - Logo Oficial">
             </div>
 
-            <div class="hero-title-group">
-                <span class="edition-badge-live">
-                    <span class="pulse-core-dot"></span>
-                    Cierre 3° Encuentro Binacional de Lúpulo
-                </span>
+            <div class="hero-title-edition">
+                Sábado 7 de Noviembre · 18 a 00 h
+            </div>
 
-                <p class="hero-lead-summary">
-                    El encuentro que reúne lo mejor de la <strong>cerveza independiente cordobesa</strong>, gastronomía de autor y amigos para brindar.
-                </p>
+            <p class="hero-tagline-motto">
+                El encuentro que reúne lo mejor de la <strong>cerveza independiente cordobesa</strong>, gastronomía y amigos para brindar.
+            </p>
 
-                <div class="badges-capsule-row">
-                    <span class="pill-badge-seal">📍 Museo de la Industria</span>
-                    <span class="pill-badge-seal">🎟️ Entrada Gratis</span>
-                    <span class="pill-badge-seal">🍺 Pinta $5.000</span>
-                    <span class="pill-badge-seal">🎷 Música en Vivo</span>
-                </div>
+            <div class="hero-badges-row">
+                <span class="pill-micro-seal">📍 Museo de la Industria</span>
+                <span class="pill-micro-seal">🎟️ Entrada Libre y Gratuita</span>
+                <span class="pill-micro-seal">🍺 Pinta $5.000</span>
+                <span class="pill-micro-seal">🎸 Bandas en Vivo</span>
             </div>
         </section>
 
-        <!-- VIDEO REEL EN VIVO (OPTIMIZADO & AMBIENTAL) -->
-        <section class="video-reel-container">
-            <video id="birrazoVideoPlayer" class="video-ambient-player" autoplay loop muted playsinline poster="banner-todoloquetenesquesaber.jpg">
+        <!-- VIDEO REEL EN VIVO -->
+        <section class="reel-player-stage">
+            <video id="birrazoReelPlayer" class="reel-video-element" autoplay loop muted playsinline poster="banner-todoloquetenesquesaber.jpg">
                 <source src="1105 (2) (1) (1).mp4" type="video/mp4">
             </video>
-            <div class="video-gradient-overlay"></div>
+            <div class="reel-vignette"></div>
 
-            <div class="video-content-footer">
-                <div class="video-text-meta">
-                    <span class="video-pill-tag">Así se vive el Birrazo</span>
-                    <h2 class="video-title-bold">Sábado 7 Nov · 18 a 00 h</h2>
-                    <span style="font-size: 0.74rem; color: #DDD;">Ingreso por calle Coronel Pringles, B° Gral Paz</span>
+            <div class="reel-overlay-content">
+                <div class="reel-meta-left">
+                    <span class="reel-live-tag">Así se vive el Birrazo</span>
+                    <h2 class="reel-title-head">El Festival Cervecero</h2>
+                    <span class="reel-caption-sub">Ingreso peatonal por calle Coronel Pringles</span>
                 </div>
 
-                <div class="video-controls-bubble">
-                    <button class="video-btn-action" id="audioToggleBtn" onclick="toggleVideoAudio()" title="Activar/Silenciar sonido">
-                        🔊
-                    </button>
-                </div>
+                <button class="audio-circular-switch" id="btnSoundToggle" onclick="toggleReelAudio()" title="Activar sonido">
+                    <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                </button>
             </div>
         </section>
 
-        <!-- GRILLA BENTO MORFOLÓGICA CON DATA DURA -->
+        <!-- GRILLA BENTO MORFOLÓGICA CON FONDOS CLAROS Y CONTRASTE -->
         <section class="morph-bento-grid">
 
             <!-- 1. HORARIO & ACCESO -->
-            <article class="bento-cell cell-schedule" onclick="playTap()">
-                <div class="cell-top-row">
-                    <span class="cell-mini-tag" style="color: #BBE870;">HORARIOS</span>
+            <article class="bento-cell-card cell-time-venue" onclick="playTap()">
+                <div class="cell-top-meta">
+                    <span class="cell-chip-tag" style="color: var(--hop-dark-forest);">HORARIO</span>
                     <span class="cell-arrow-icon">🕕</span>
                 </div>
                 <div>
-                    <h3 class="cell-hero-title">18:00 a 00:00 h</h3>
-                    <p class="cell-hero-desc">Entrada libre y gratuita. Ingreso por orden de llegada hasta agotar capacidad.</p>
+                    <h3 class="cell-poster-headline">18:00 A 00:00 H</h3>
+                    <p class="cell-body-caption">Entrada libre y gratuita. Ingreso por orden de llegada hasta colmar capacidad.</p>
                 </div>
             </article>
 
-            <!-- 2. PRECIOS DE BARRA & ECOVASO -->
-            <article class="bento-cell cell-pricing" onclick="playTap()">
-                <div class="cell-top-row">
-                    <span class="cell-mini-tag" style="color: #FFCF66;">BARRA INDEPENDIENTE</span>
-                    <span class="cell-arrow-icon">🍺</span>
-                </div>
-                <div>
-                    <h3 class="cell-hero-title">Pinta $5.000</h3>
-                    <p class="cell-hero-desc">Ecovaso $1.000 (¡Podés traer tu vaso de ediciones anteriores!).</p>
-                </div>
-                <img src="recursocerveza.png" alt="Vaso Birrazo" class="sticker-beer-badge">
-            </article>
-
-            <!-- 3. BANDA: LA JAMBOREE -->
-            <a href="https://www.instagram.com/lajamboree" target="_blank" rel="noopener noreferrer" class="bento-cell cell-jamboree" onclick="playTap()">
-                <div class="cell-top-row">
-                    <span class="cell-mini-tag" style="color: var(--color-gold);">EN VIVO · 20:00 H</span>
+            <!-- 2. PINTAS & BARRA -->
+            <article class="bento-cell-card cell-beer-pricing" onclick="playTap()">
+                <div class="cell-top-meta">
+                    <span class="cell-chip-tag" style="color: var(--amber-gold-deep);">BARRA INDEPENDIENTE</span>
                     <span class="cell-arrow-icon">↗</span>
                 </div>
                 <div>
-                    <h3 class="cell-hero-title">La Jamboree</h3>
-                    <p class="cell-hero-desc">Swing, jazz bailable y fiesta en el patio del museo.</p>
+                    <h3 class="cell-poster-headline">PINTA $5.000</h3>
+                    <p class="cell-body-caption">Ecovaso $1.000 (podés traer tu vaso de ediciones anteriores).</p>
+                </div>
+                <img src="recursocerveza.png" alt="Vaso Birrazo" class="beer-floating-sticker">
+            </article>
+
+            <!-- 3. BANDA: LA JAMBOREE -->
+            <a href="https://www.instagram.com/lajamboree" target="_blank" rel="noopener noreferrer" class="bento-cell-card cell-band-jamboree" onclick="playTap()">
+                <div class="cell-top-meta">
+                    <span class="cell-chip-tag" style="color: var(--hop-green-deep);">EN VIVO · 20:00 H</span>
+                    <span class="cell-arrow-icon">↗</span>
+                </div>
+                <div>
+                    <h3 class="cell-poster-headline">LA JAMBOREE</h3>
+                    <p class="cell-body-caption">Swing, jazz bailable & fiesta en el patio del museo.</p>
                 </div>
             </a>
 
             <!-- 4. BANDA: MUSHA SOUL -->
-            <a href="https://www.instagram.com/mushasoul" target="_blank" rel="noopener noreferrer" class="bento-cell cell-musha" onclick="playTap()">
-                <div class="cell-top-row">
-                    <span class="cell-mini-tag" style="color: #97C73C;">EN VIVO · 21:30 H</span>
+            <a href="https://www.instagram.com/mushasoul" target="_blank" rel="noopener noreferrer" class="bento-cell-card cell-band-musha" onclick="playTap()">
+                <div class="cell-top-meta">
+                    <span class="cell-chip-tag" style="color: var(--hop-green-deep);">EN VIVO · 21:30 H</span>
                     <span class="cell-arrow-icon">↗</span>
                 </div>
                 <div>
-                    <h3 class="cell-hero-title">Musha Soul</h3>
-                    <p class="cell-hero-desc">Funk, soul, groove y baile bajo las estrellas.</p>
+                    <h3 class="cell-poster-headline">MUSHA SOUL</h3>
+                    <p class="cell-body-caption">Funk, groove, soul & fiesta bajo las estrellas.</p>
                 </div>
             </a>
 
-            <!-- 5. UBICACIÓN COMPLETA: CÓMO LLEGAR -->
-            <a href="https://maps.google.com/?q=Museo+de+la+Industria+Cordoba+Pringles" target="_blank" rel="noopener noreferrer" class="bento-cell cell-wide-location" onclick="playTap()">
+            <!-- 5. UBICACIÓN Y CÓMO LLEGAR: CONTRASTE SOBERANO -->
+            <a href="https://maps.google.com/?q=Museo+de+la+Industria+Cordoba+Pringles" target="_blank" rel="noopener noreferrer" class="bento-cell-card cell-wide-navigation" onclick="playTap()">
                 <div style="flex:1;">
-                    <div class="cell-top-row" style="margin-bottom: 2px;">
-                        <span class="cell-mini-tag" style="color: var(--color-gold);">UBICACIÓN &amp; ACCESO</span>
+                    <div class="cell-top-meta" style="margin-bottom: 2px;">
+                        <span class="cell-chip-tag" style="color: var(--hop-lime-pale);">UBICACIÓN &amp; CÓMO LLEGAR</span>
                     </div>
-                    <h3 class="cell-hero-title">Museo de la Industria</h3>
-                    <p class="cell-hero-desc">Ingreso peatonal exclusivo por calle <strong>Coronel Pringles</strong> (B° General Paz, Córdoba).</p>
+                    <h3 class="cell-poster-headline" style="color: #FFFFFF;">MUSEO DE LA INDUSTRIA</h3>
+                    <p class="cell-body-caption" style="color: #DDE2CF;">
+                        Ingreso peatonal exclusivo por calle <strong>Coronel Pringles</strong> (Barrio General Paz, Córdoba Capital).
+                    </p>
                 </div>
-                <span class="cell-arrow-icon" style="color: var(--color-gold); font-size: 1.4rem;">📍</span>
+                <span class="cell-arrow-icon" style="color: var(--hop-lime-pale); font-size: 1.5rem;">📍</span>
             </a>
 
         </section>
 
-        <!-- 4. SLIDER DE CERVECERÍAS PARTICIPANTES -->
-        <section class="showcase-flow-deck">
-            <div class="showcase-header-row">
-                <span class="showcase-title-main">10 Cervecerías Locales</span>
-                <span class="showcase-sub-tag">Pizarras Listas</span>
+        <!-- 4. SLIDER: CERVECERÍAS INDEPENDIENTES -->
+        <section class="showcase-flow-box">
+            <div class="showcase-nav-row">
+                <span class="showcase-title-serif">10 Cervecerías Locales</span>
+                <span class="showcase-link-callout">Canillas Listas</span>
             </div>
 
-            <div class="horizontal-snap-carousel">
-                
-                <!-- CERVECERÍA 1 -->
-                <a href="https://www.instagram.com/aton.cerveza" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Canillas</span>
-                        <img src="cervecerias.jpg" alt="Aton Cerveza" loading="lazy">
+            <div class="horizontal-snap-track">
+
+                <a href="https://www.instagram.com/aton.cerveza" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Artesanal</span>
+                        <img src="cervecerias.jpg" alt="Aton Cerveza" loading="lazy" onerror="this.src='banner7denoviembrebirrazo.png'">
                     </div>
-                    <span class="card-title-text">Aton Beer</span>
-                    <span class="card-meta-text">@aton.cerveza</span>
+                    <span class="card-brewery-name">Aton Beer</span>
+                    <span class="card-brewery-handle">@aton.cerveza</span>
                 </a>
 
-                <!-- CERVECERÍA 2 -->
-                <a href="https://www.instagram.com/arthurcerveza" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Canillas</span>
-                        <img src="1.jpg" alt="Arthur Cervecería" loading="lazy">
+                <a href="https://www.instagram.com/arthurcerveza" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Tirada</span>
+                        <img src="1.jpg" alt="Arthur" loading="lazy" onerror="this.src='cervecerias.jpg'">
                     </div>
-                    <span class="card-title-text">Arthur</span>
-                    <span class="card-meta-text">@arthurcerveza</span>
+                    <span class="card-brewery-name">Arthur</span>
+                    <span class="card-brewery-handle">@arthurcerveza</span>
                 </a>
 
-                <!-- CERVECERÍA 3 -->
-                <a href="https://www.instagram.com/elixia.artbeer.ok" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Canillas</span>
-                        <img src="2.jpg" alt="Elixia Art Beer" loading="lazy">
+                <a href="https://www.instagram.com/elixia.artbeer.ok" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Art Beer</span>
+                        <img src="2.jpg" alt="Elixia" loading="lazy" onerror="this.src='cervecerias.jpg'">
                     </div>
-                    <span class="card-title-text">Elixia Art Beer</span>
-                    <span class="card-meta-text">@elixia.artbeer.ok</span>
+                    <span class="card-brewery-name">Elixia</span>
+                    <span class="card-brewery-handle">@elixia.artbeer.ok</span>
                 </a>
 
-                <!-- CERVECERÍA 4 -->
-                <a href="https://www.instagram.com/kral.cerveza.artesanal" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Canillas</span>
-                        <img src="3.jpg" alt="Kral Microcervecería" loading="lazy">
+                <a href="https://www.instagram.com/kral.cerveza.artesanal" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Microcervecería</span>
+                        <img src="3.jpg" alt="Kral" loading="lazy" onerror="this.src='cervecerias.jpg'">
                     </div>
-                    <span class="card-title-text">Kral Artesanal</span>
-                    <span class="card-meta-text">@kral.cerveza.artesanal</span>
+                    <span class="card-brewery-name">Kral</span>
+                    <span class="card-brewery-handle">@kral.cerveza.artesanal</span>
                 </a>
 
-                <!-- CERVECERÍA 5 -->
-                <a href="https://www.instagram.com/calvu.cerveza" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Canillas</span>
-                        <img src="4.jpg" alt="Calvú Cerveza" loading="lazy">
+                <a href="https://www.instagram.com/calvu.cerveza" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Sierras</span>
+                        <img src="4.jpg" alt="Calvú" loading="lazy" onerror="this.src='cervecerias.jpg'">
                     </div>
-                    <span class="card-title-text">Calvú</span>
-                    <span class="card-meta-text">@calvu.cerveza</span>
+                    <span class="card-brewery-name">Calvú</span>
+                    <span class="card-brewery-handle">@calvu.cerveza</span>
                 </a>
 
-                <!-- CERVECERÍA 6 -->
-                <a href="https://www.instagram.com/penonbiertruck" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Canillas</span>
-                        <img src="_DSC1078.jpg" alt="Peñón del Águila" loading="lazy">
+                <a href="https://www.instagram.com/penonbiertruck" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Bier Truck</span>
+                        <img src="cervecerias.jpg" alt="Peñón del Águila" loading="lazy">
                     </div>
-                    <span class="card-title-text">Peñón del Águila</span>
-                    <span class="card-meta-text">@penonbiertruck</span>
+                    <span class="card-brewery-name">Peñón del Águila</span>
+                    <span class="card-brewery-handle">@penonbiertruck</span>
                 </a>
 
-                <!-- CERVECERÍA 7 -->
-                <a href="https://www.instagram.com/delfoydidara.cervezas" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Canillas</span>
-                        <img src="_DSC1082.jpg" alt="Didara y Delfo" loading="lazy">
+                <a href="https://www.instagram.com/delfoydidara.cervezas" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Independiente</span>
+                        <img src="1.jpg" alt="Didara y Delfo" loading="lazy" onerror="this.src='cervecerias.jpg'">
                     </div>
-                    <span class="card-title-text">Didara &amp; Delfo</span>
-                    <span class="card-meta-text">@delfoydidara.cervezas</span>
+                    <span class="card-brewery-name">Didara &amp; Delfo</span>
+                    <span class="card-brewery-handle">@delfoydidara.cervezas</span>
                 </a>
 
-                <!-- CERVECERÍA 8 -->
-                <a href="https://www.instagram.com/bufondelreycerveceria" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Canillas</span>
+                <a href="https://www.instagram.com/bufondelreycerveceria" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Lúpulos</span>
                         <img src="cervecerias.jpg" alt="Bufón del Rey" loading="lazy">
                     </div>
-                    <span class="card-title-text">Bufón del Rey</span>
-                    <span class="card-meta-text">@bufondelreycerveceria</span>
+                    <span class="card-brewery-name">Bufón del Rey</span>
+                    <span class="card-brewery-handle">@bufondelreycerveceria</span>
                 </a>
 
-                <!-- CERVECERÍA 9 -->
-                <a href="https://www.instagram.com/gius.cerveceria" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Canillas</span>
-                        <img src="preciopintas.jpg" alt="La Tertulia de Gius" loading="lazy">
+                <a href="https://www.instagram.com/gius.cerveceria" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Casa de Cerveza</span>
+                        <img src="preciopintas.jpg" alt="Gius Cervecería" loading="lazy" onerror="this.src='cervecerias.jpg'">
                     </div>
-                    <span class="card-title-text">Gius Cervecería</span>
-                    <span class="card-meta-text">@gius.cerveceria</span>
+                    <span class="card-brewery-name">Gius Cervecería</span>
+                    <span class="card-brewery-handle">@gius.cerveceria</span>
                 </a>
 
-                <!-- CERVECERÍA 10 -->
-                <a href="https://www.instagram.com/choppcassarooficial" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Canillas</span>
-                        <img src="cervecerias.jpg" alt="Chopp Cassaro" loading="lazy">
+                <a href="https://www.instagram.com/choppcassarooficial" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Clásica</span>
+                        <img src="cervecerias.jpg" alt="Cassaro" loading="lazy">
                     </div>
-                    <span class="card-title-text">Cassaro</span>
-                    <span class="card-meta-text">@choppcassarooficial</span>
+                    <span class="card-brewery-name">Cassaro</span>
+                    <span class="card-brewery-handle">@choppcassarooficial</span>
                 </a>
 
             </div>
         </section>
 
-        <!-- 5. SLIDER DE FOOD TRUCKS -->
-        <section class="showcase-flow-deck">
-            <div class="showcase-header-row">
-                <span class="showcase-title-main">Polo Gastronómico</span>
-                <span class="showcase-sub-tag">Morfi &amp; Snacks</span>
+        <!-- 5. SLIDER: POLO GASTRONÓMICO FOOD TRUCKS -->
+        <section class="showcase-flow-box">
+            <div class="showcase-nav-row">
+                <span class="showcase-title-serif">Polo Gastronómico</span>
+                <span class="showcase-link-callout">Morfi &amp; Street Food</span>
             </div>
 
-            <div class="horizontal-snap-carousel">
+            <div class="horizontal-snap-track">
 
-                <a href="https://www.instagram.com/pizzarisata" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Horno de Barro</span>
+                <a href="https://www.instagram.com/pizzarisata" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Horno de Barro</span>
                         <img src="foodtrucks.png" alt="Risata Pizza" loading="lazy">
                     </div>
-                    <span class="card-title-text">Risata</span>
-                    <span class="card-meta-text">Pizzas napolitanas</span>
+                    <span class="card-brewery-name">Risata</span>
+                    <span class="card-brewery-handle">Pizzas napolitanas</span>
                 </a>
 
-                <a href="https://www.instagram.com/chickentruck2019" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Crispy</span>
+                <a href="https://www.instagram.com/chickentruck2019" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Crispy</span>
                         <img src="foodtrucks.png" alt="Chicken Truck" loading="lazy">
                     </div>
-                    <span class="card-title-text">Chicken Truck</span>
-                    <span class="card-meta-text">Pollo frito &amp; snacks</span>
+                    <span class="card-brewery-name">Chicken Truck</span>
+                    <span class="card-brewery-handle">Pollo frito &amp; snacks</span>
                 </a>
 
-                <a href="https://www.instagram.com/donjacintotruck" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Salteñas</span>
+                <a href="https://www.instagram.com/donjacintotruck" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Salteñas</span>
                         <img src="foodtrucks.png" alt="Don Jacinto" loading="lazy">
                     </div>
-                    <span class="card-title-text">Don Jacinto</span>
-                    <span class="card-meta-text">Empanadas de autor</span>
+                    <span class="card-brewery-name">Don Jacinto</span>
+                    <span class="card-brewery-handle">Empanadas auténticas</span>
                 </a>
 
-                <a href="https://www.instagram.com/backerhaus" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Panadería</span>
+                <a href="https://www.instagram.com/backerhaus" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Panadería</span>
                         <img src="foodtrucks.png" alt="Bäckerhaus" loading="lazy">
                     </div>
-                    <span class="card-title-text">Bäckerhaus</span>
-                    <span class="card-meta-text">Sandwiches &amp; Street Food</span>
+                    <span class="card-brewery-name">Bäckerhaus</span>
+                    <span class="card-brewery-handle">Sandwiches de autor</span>
                 </a>
 
-                <a href="https://www.instagram.com/scrofa_food_truck" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
-                    <div class="card-poster-frame">
-                        <span class="card-corner-badge">Gourmet</span>
-                        <img src="foodtrucks.png" alt="Scrofa Food Truck" loading="lazy">
+                <a href="https://www.instagram.com/scrofa_food_truck" target="_blank" rel="noopener noreferrer" class="brewery-porcelain-card" onclick="playTap()">
+                    <div class="card-image-window">
+                        <span class="badge-corner-type">Gourmet</span>
+                        <img src="foodtrucks.png" alt="Scrofa" loading="lazy">
                     </div>
-                    <span class="card-title-text">Scrofa</span>
-                    <span class="card-meta-text">Bondiolas &amp; Burgers</span>
+                    <span class="card-brewery-name">Scrofa</span>
+                    <span class="card-brewery-handle">Bondiolas &amp; burgers</span>
                 </a>
 
             </div>
         </section>
 
-        <!-- 6. GALERÍA SOCIAL PROOF: AMBIENTE DEL MUSEO -->
-        <article class="live-photo-deck">
+        <!-- 6. GALERÍA SOCIAL PROOF: AMBIENTE REAL -->
+        <article class="live-photo-box">
             <div style="display:flex; justify-content:space-between; align-items:center;">
-                <h3 class="showcase-title-main" style="font-size:1.05rem;">Galería del Encuentro</h3>
-                <span style="font-family: var(--font-mono); font-size:0.65rem; color: var(--color-gold); font-weight:800;">#ELBIRRAZO</span>
+                <h3 class="showcase-title-serif" style="font-size:1.15rem;">Vibra en el Museo</h3>
+                <span style="font-family: var(--font-mono); font-size:0.68rem; color: var(--hop-green-deep); font-weight:800;">#ELBIRRAZO</span>
             </div>
 
-            <div class="gallery-track-slider">
-                <div class="gallery-photo-item">
-                    <img src="_DSC1078.jpg" alt="Tirada de birra fresca" loading="lazy">
-                    <span class="photo-floating-caption">Tirada Fresca</span>
+            <div class="gallery-horizontal-scroll">
+                <div class="gallery-tile-item">
+                    <img src="banner-todoloquetenesquesaber.jpg" alt="Festival Birrazo" loading="lazy" onerror="this.src='banner7denoviembrebirrazo.png'">
+                    <span class="gallery-caption-strip">Encuentro</span>
                 </div>
-                <div class="gallery-photo-item">
-                    <img src="_DSC1082.jpg" alt="Pinta con neón" loading="lazy">
-                    <span class="photo-floating-caption">Pinta &amp; Neón</span>
+                <div class="gallery-tile-item">
+                    <img src="1.jpg" alt="Marea de gente en el museo" loading="lazy" onerror="this.src='banner-todoloquetenesquesaber.jpg'">
+                    <span class="gallery-caption-strip">Galpón Histórico</span>
                 </div>
-                <div class="gallery-photo-item">
-                    <img src="3.jpg" alt="Amigos brindando" loading="lazy">
-                    <span class="photo-floating-caption">Comunidad</span>
+                <div class="gallery-tile-item">
+                    <img src="2.jpg" alt="Tirada de cerveza en barra" loading="lazy" onerror="this.src='banner-todoloquetenesquesaber.jpg'">
+                    <span class="gallery-caption-strip">Tirada Fresca</span>
                 </div>
-                <div class="gallery-photo-item">
-                    <img src="4.jpg" alt="Morfi & Birra" loading="lazy">
-                    <span class="photo-floating-caption">Brindis</span>
+                <div class="gallery-tile-item">
+                    <img src="3.jpg" alt="Amigos brindando" loading="lazy" onerror="this.src='banner-todoloquetenesquesaber.jpg'">
+                    <span class="gallery-caption-strip">Comunidad</span>
                 </div>
-                <div class="gallery-photo-item">
-                    <img src="1.jpg" alt="Galpón Museo" loading="lazy">
-                    <span class="photo-floating-caption">Museo Noche</span>
+                <div class="gallery-tile-item">
+                    <img src="4.jpg" alt="Brindis nocturno" loading="lazy" onerror="this.src='banner-todoloquetenesquesaber.jpg'">
+                    <span class="gallery-caption-strip">Pinta &amp; Neón</span>
                 </div>
             </div>
         </article>
 
         <!-- 7. SECCIÓN INSTITUCIONAL: COPA LIGA DEL CENTRO 2026 -->
-        <section class="copa-feature-card">
-            <div class="copa-badge-row">
-                <span class="pill-badge-seal" style="border-color: var(--color-gold);">🏆 Competencia Oficial</span>
-                <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--color-text-muted);">Agosto 2026</span>
+        <section class="copa-banner-enclosure">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span class="pill-micro-seal" style="background:#FFFFFF;">🏆 Competencia Oficial</span>
+                <span style="font-family: var(--font-mono); font-size: 0.68rem; font-weight: 800; color: var(--hop-dark-forest);">Agosto 2026</span>
             </div>
 
             <div>
-                <h3 class="copa-title">Copa Liga del Centro</h3>
-                <p style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 4px; line-height: 1.4;">
-                    Evaluación y premiación de las mejores cervezas del país por Beer Awards Platform. Inscripciones abiertas.
+                <h3 class="copa-title-main">Copa Liga del Centro</h3>
+                <p style="font-size: 0.78rem; color: var(--hop-dark-forest); margin-top: 4px; line-height: 1.4; font-weight:600;">
+                    Inscripciones y evaluación de las mejores cervezas del país mediante Beer Awards Platform.
                 </p>
             </div>
 
             <div class="copa-buttons-row">
-                <a href="https://beerawardsplatform.com/copa-liga-del-centro-profesional-26" target="_blank" rel="noopener noreferrer" class="btn-copa-action" onclick="playTap()">
+                <a href="https://beerawardsplatform.com/copa-liga-del-centro-profesional-26" target="_blank" rel="noopener noreferrer" class="btn-copa-entry" onclick="playTap()">
                     Copa Profesional ↗
                 </a>
-                <a href="https://beerawardsplatform.com/copa-de-cervezas-liga-del-centro-homebrewer-2026" target="_blank" rel="noopener noreferrer" class="btn-copa-action" onclick="playTap()">
+                <a href="https://beerawardsplatform.com/copa-de-cervezas-liga-del-centro-homebrewer-2026" target="_blank" rel="noopener noreferrer" class="btn-copa-entry" onclick="playTap()">
                     Copa Homebrewer ↗
                 </a>
             </div>
         </section>
 
-        <!-- 8. FOOTER NOBLE & SELLOS -->
-        <footer class="footer-noble-deck">
-            <div class="footer-logos-stack">
-                <img src="CCIC LOGO BLANCO.png" alt="CCIC Logo" class="footer-logo-item">
+        <!-- 8. FOOTER INSTITUCIONAL -->
+        <footer class="footer-institutional-monument">
+            <div class="footer-logos-row">
+                <img src="CCIC LOGO NEGRO.png" alt="CCIC Logo" class="footer-ccic-img" onerror="this.src='CCIC LOGO BLANCO.png'">
             </div>
 
-            <p style="font-size: 0.76rem; color: var(--color-text-muted); line-height: 1.45; max-width: 380px;">
+            <p class="footer-address-caption">
                 <strong>Organizan:</strong> La Liga del Centro &amp; Cámara de Cerveceros Independientes de Córdoba (CCIC)<br>
                 <strong>Acompaña:</strong> Secretaría de Fortalecimiento Vecinal, Cultura y Deportes · Municipalidad de Córdoba
             </p>
@@ -1340,59 +1298,48 @@
 
     </main>
 
-    <!-- BOTÓN FLOTANTE CÓMO LLEGAR -->
-    <a href="https://maps.google.com/?q=Museo+de+la+Industria+Cordoba+Pringles" target="_blank" rel="noopener noreferrer" class="floating-action-portal" aria-label="Abrir mapa en Google Maps" onclick="playTap()">
-        <span class="floating-label-pill">Cómo llegar</span>
-        <div class="floating-circle-btn">📍</div>
+    <!-- 9. BOTÓN FLOTANTE CÓMO LLEGAR (SIN EMOJIS, CON SVG NATIVO) -->
+    <a href="https://maps.google.com/?q=Museo+de+la+Industria+Cordoba+Pringles" target="_blank" rel="noopener noreferrer" class="floating-pin-portal" aria-label="Abrir mapa en Google Maps" onclick="playTap()">
+        <span class="floating-pill-caption">Cómo llegar</span>
+        <div class="floating-circle-glyph">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
     </a>
 
-    <!-- CONTROLADOR JAVASCRIPT LIVIANO -->
+    <!-- CONTROLADORES JAVASCRIPT LIVIANOS -->
     <script>
         function playTap() {
             if ('vibrate' in navigator) {
-                try { navigator.vibrate(12); } catch(e) {}
+                try { navigator.vibrate(8); } catch(e) {}
             }
         }
 
-        function toggleBirrazoTheme() {
+        function toggleReelAudio() {
             playTap();
-            const body = document.body;
-            const current = body.getAttribute('data-theme') || 'default';
-            const next = current === 'default' ? 'lupulo' : 'default';
-            body.setAttribute('data-theme', next);
+            const video = document.getElementById('birrazoReelPlayer');
+            const btn = document.getElementById('btnSoundToggle');
+            if (!video || !btn) return;
 
-            const label = document.getElementById('themeLabelText');
-            if (label) {
-                label.innerText = next === 'lupulo' ? 'Industrial Mode' : 'Lúpulo Mode';
-            }
-        }
-
-        function toggleVideoAudio() {
-            playTap();
-            const player = document.getElementById('birrazoVideoPlayer');
-            const btn = document.getElementById('audioToggleBtn');
-            if (!player || !btn) return;
-
-            if (player.muted) {
-                player.muted = false;
-                btn.innerText = '🔈';
+            if (video.muted) {
+                video.muted = false;
+                btn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM19 12c0 3.17-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM3 9v6h4l5 5V4L7 9H3z"/></svg>';
             } else {
-                player.muted = true;
-                btn.innerText = '🔊';
+                video.muted = true;
+                btn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>';
             }
         }
 
-        // FÍSICA MAGNÉTICA SUAVE
+        // FÍSICA MAGNÉTICA SUAVE EN DISPOSITIVOS CON PUNTERO FINO
         if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-            document.querySelectorAll('.bento-cell, .brewery-card-tile, .organizer-pill-anchor').forEach(elem => {
-                elem.addEventListener('mousemove', (e) => {
-                    const rect = elem.getBoundingClientRect();
+            document.querySelectorAll('.bento-cell-card, .brewery-porcelain-card, .pill-organizer-btn').forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
                     const x = e.clientX - rect.left - rect.width / 2;
                     const y = e.clientY - rect.top - rect.height / 2;
-                    elem.style.transform = `translate(${x * 0.02}px, ${y * 0.02 - 3}px)`;
+                    card.style.transform = `translate(${x * 0.02}px, ${y * 0.02 - 3}px)`;
                 });
-                elem.addEventListener('mouseleave', () => {
-                    elem.style.transform = '';
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
                 });
             });
         }
