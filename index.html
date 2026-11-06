@@ -2,75 +2,62 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DYNAMIC GYM 2 | Centro de Entrenamiento & Fuerza · Puerto Iguazú</title>
-    <meta name="description" content="Centro de Musculación, Fuerza, Rendimiento y Cardio en Puerto Iguazú, Misiones. Av. Misiones 211.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BIRRAZO en el Museo de la Industria | La Liga del Centro &amp; CCIC</title>
+    <meta name="description" content="El festival que reúne lo mejor de la cerveza independiente cordobesa, gastronomía, música en vivo y fiesta. Sábado 7 de Noviembre de 18 a 00 h. Entrada libre y gratuita.">
 
-    <!-- TIPOGRAFÍAS ATHLETIC IMPACT -->
+    <meta name="theme-color" content="#121510">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- TIPOGRAFÍAS DE CARÁCTER: SYNE + PLUS JAKARTA SANS + SPACE GROTESK -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
 
     <style>
-        /* =========================================================
-           ADN CROMÁTICO: MODO CLARO (ATHLETIC STUDIO - POR DEFECTO)
-           ========================================================= */
+        /* ==========================================================================
+           1. SISTEMA CROMÁTICO: NOCHE INDUSTRIAL, DORADO CERVECERO & VERDE LÚPULO
+           ========================================================================== */
         :root {
-            --bg-canvas: #F4F6F9;
-            --bg-surface: #FFFFFF;
-            --bg-card: #FFFFFF;
-            --bg-card-subtle: #EDF1F5;
+            --bg-deep: #121510;
+            --bg-card: rgba(26, 31, 23, 0.78);
+            --bg-card-elevated: #22291E;
+            --bg-card-glass: rgba(30, 37, 26, 0.88);
+            
+            --color-text-main: #F4F5EF;
+            --color-text-muted: #A8B29C;
+            --color-text-faded: #6E7963;
+            
+            --color-gold: #F2A900;
+            --color-gold-glow: rgba(242, 169, 0, 0.35);
+            --color-amber: #D67A0A;
+            
+            --color-hop-green: #7FA832;
+            --color-hop-deep: #476313;
+            --color-hop-glow: rgba(127, 168, 50, 0.35);
 
-            --nike-black: #0B0D11;
-            --nike-pitch: #11141A;
-            --text-primary: #0B0D11;
-            --text-secondary: #4B5563;
-            --text-tertiary: #9CA3AF;
+            --color-iron-border: rgba(244, 245, 239, 0.12);
+            --color-iron-hover: #F2A900;
 
-            /* Acentos Virtua Tennis & Estadio */
-            --vt-orange: #FF4600;
-            --vt-orange-hot: #FF6A00;
-            --vt-yellow: #FFC400;
-            --vt-blue-stadium: #0D2C54;
-            --we-cyan: #0284C7;
-            --volt-pure: #CCFF00;
+            --font-display: 'Syne', sans-serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+            --font-mono: 'Space Grotesk', monospace;
 
-            --border-crisp: #0B0D11;
-            --border-light: rgba(11, 13, 17, 0.12);
-            --shadow-hard: 4px 4px 0px rgba(11, 13, 17, 0.95);
-            --shadow-pop: 5px 5px 0px var(--vt-orange);
-
-            --font-display: 'Barlow Condensed', sans-serif;
-            --font-impact: 'Anton', sans-serif;
-            --font-ui: 'Plus Jakarta Sans', sans-serif;
-            --font-mono: 'Space Mono', monospace;
+            --spring: cubic-bezier(0.16, 1, 0.3, 1);
+            --shadow-subtle: 0 10px 30px rgba(0, 0, 0, 0.35);
+            --shadow-float: 0 16px 36px -10px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08);
+            --shadow-glow-gold: 0 14px 34px -6px rgba(242, 169, 0, 0.40);
+            --shadow-glow-green: 0 14px 34px -6px rgba(127, 168, 50, 0.40);
         }
 
-        /* =========================================================
-           ADN CROMÁTICO: MODO OSCURO (UNDERGROUND BOX ARENA)
-           ========================================================= */
-        body.dark-mode {
-            --bg-canvas: #090B0E;
-            --bg-surface: #13171F;
-            --bg-card: #161B26;
-            --bg-card-subtle: #1C2331;
-
-            --nike-black: #FFFFFF;
-            --nike-pitch: #F3F4F6;
-            --text-primary: #FFFFFF;
-            --text-secondary: #94A3B8;
-            --text-tertiary: #64748B;
-
-            --vt-orange: #FF5500;
-            --vt-orange-hot: #FF7700;
-            --vt-yellow: #FFD000;
-            --vt-blue-stadium: #1E3A8A;
-            --we-cyan: #38BDF8;
-
-            --border-crisp: #334155;
-            --border-light: rgba(255, 255, 255, 0.14);
-            --shadow-hard: 4px 4px 0px #000000;
-            --shadow-pop: 5px 5px 0px var(--vt-orange);
+        body[data-theme="lupulo"] {
+            --bg-deep: #1B2412;
+            --bg-card: rgba(36, 48, 24, 0.85);
+            --bg-card-elevated: #2E3E1E;
+            --bg-card-glass: rgba(40, 54, 27, 0.92);
+            --color-hop-green: #97C73C;
+            --color-gold: #FFB71B;
         }
 
         * {
@@ -81,1604 +68,1334 @@
         }
 
         html {
-            background-color: var(--bg-canvas);
+            background-color: var(--bg-deep);
             scroll-behavior: smooth;
         }
 
         body {
-            font-family: var(--font-ui);
-            color: var(--text-primary);
+            font-family: var(--font-sans);
+            color: var(--color-text-main);
+            background-color: var(--bg-deep);
             min-height: 100vh;
             min-height: 100dvh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
-            padding: 0 0 70px;
+            padding: 0 14px 80px;
             overflow-x: hidden;
             position: relative;
-            transition: background-color 0.25s ease, color 0.25s ease;
+            letter-spacing: -0.015em;
+            transition: background-color 0.35s ease;
         }
 
-        /* CANVAS DE FONDO REACTIVO */
-        .arcade-energy-canvas {
+        /* ==========================================================================
+           2. PATRÓN DIAGONAL REPETITIVO: CEBADA + CERVEZA FLOTANTE SIMÉTRICA
+           ========================================================================== */
+        .ambient-diagonal-drift {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: -2;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image: 
+                url("recursocebada.png"), 
+                url("recursocerveza.png");
+            background-size: 64px 64px, 64px 64px;
+            background-position: 0 0, 32px 32px;
+            background-repeat: repeat;
+            opacity: 0.055;
+            filter: grayscale(20%);
+            animation: driftDiagonalPattern 45s linear infinite;
+            will-change: background-position;
+        }
+
+        @keyframes driftDiagonalPattern {
+            0% {
+                background-position: 0 0, 32px 32px;
+            }
+            100% {
+                background-position: 640px 640px, 672px 672px;
+            }
+        }
+
+        /* Velo degradado que enfoca el contenido y resalta los galpones industriales */
+        .ambient-vignette-veil {
+            position: fixed;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none;
+            background: radial-gradient(circle at 50% 15%, rgba(242, 169, 0, 0.08) 0%, transparent 60%),
+                        linear-gradient(180deg, rgba(18, 21, 16, 0.4) 0%, rgba(18, 21, 16, 0.95) 75%, var(--bg-deep) 100%);
+        }
+
+        /* ==========================================================================
+           3. MARQUESINA DE TAPE SUPERIOR CON ALERTA VIVA
+           ========================================================================== */
+        .marquee-alert-tape {
+            width: calc(100% + 28px);
+            margin-left: -14px;
+            margin-right: -14px;
+            background: var(--color-gold);
+            color: #0E100C;
             overflow: hidden;
-            pointer-events: none;
-            background: linear-gradient(180deg, rgba(255, 70, 0, 0.04) 0%, transparent 45%);
-        }
-
-        body.dark-mode .arcade-energy-canvas {
-            background: radial-gradient(circle at 50% 15%, rgba(255, 70, 0, 0.10) 0%, #060709 75%);
-        }
-
-        #motionCanvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* SCANLINES CONSOLA DEPORTIVA */
-        .arcade-scanlines {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            pointer-events: none;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.02) 50%);
-            background-size: 100% 4px;
-        }
-
-        body.dark-mode .arcade-scanlines {
-            background: linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.35) 50%);
-            background-size: 100% 4px;
-        }
-
-        /* TICKER NIKE PITCH SUPERIOR CON CICLO INFINITO 100% SIN HUECOS */
-        .nike-pitch-bar {
-            width: 100%;
-            background: var(--nike-black);
-            color: var(--bg-surface);
             padding: 8px 0;
             display: flex;
-            align-items: center;
-            font-family: var(--font-display);
-            font-size: 0.95rem;
+            white-space: nowrap;
+            position: relative;
+            z-index: 20;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+        }
+
+        .marquee-track-flow {
+            display: inline-flex;
+            gap: 28px;
+            animation: tapeScrollInfinite 24s linear infinite;
+            will-change: transform;
+        }
+
+        .marquee-track-flow span {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
             font-weight: 800;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
-            border-bottom: 2px solid var(--vt-orange);
-            z-index: 10;
-            overflow: hidden;
-        }
-
-        body.dark-mode .nike-pitch-bar {
-            background: #000;
-            color: #FFF;
-        }
-
-        .pitch-ticker-wrap {
-            overflow: hidden;
-            white-space: nowrap;
-            width: 100%;
-            display: flex;
-        }
-
-        .pitch-ticker-track {
-            display: inline-flex;
-            white-space: nowrap;
-            animation: seamlessTicker 24s linear infinite;
-        }
-
-        .pitch-ticker-content {
             display: inline-flex;
             align-items: center;
-            flex-shrink: 0;
+            gap: 14px;
         }
 
-        @keyframes seamlessTicker {
-            0% { transform: translateX(0%); }
+        @keyframes tapeScrollInfinite {
+            0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
         }
 
-        .pitch-ticker-content span {
-            color: var(--vt-yellow);
-            margin: 0 10px;
-        }
-
-        /* CONTENEDOR CENTRAL */
-        .hub-container {
+        /* ==========================================================================
+           4. SHELL CONTENEDOR MOBILE-FIRST
+           ========================================================================== */
+        .master-hub-shell {
             width: 100%;
-            max-width: 480px;
-            padding: 16px 16px 0;
+            max-width: 485px;
             display: flex;
             flex-direction: column;
-            z-index: 2;
+            gap: 16px;
+            z-index: 10;
+            position: relative;
+            margin: 0 auto;
         }
 
-        /* =========================================================
-           TOP NAV: BOTONES COMPACTOS EN LOS EXTREMOS
-           ========================================================= */
-        .top-nav-cluster {
+        /* ==========================================================================
+           5. TOP CONTROLS & LOGO INSTITUCIONAL LIGA DEL CENTRO
+           ========================================================================== */
+        .top-deck-controls {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 100%;
-            margin-bottom: 28px;
+            padding: 12px 2px 2px;
+            gap: 8px;
         }
 
-        .pill-toggle-btn {
-            background: var(--vt-orange);
-            color: #FFFFFF;
-            border: 2px solid var(--border-crisp);
-            border-radius: 999px;
-            padding: 5px 13px;
-            font-family: var(--font-display);
-            font-size: 0.82rem;
-            font-weight: 900;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            cursor: pointer;
+        .organizer-pill-anchor {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            gap: 5px;
-            box-shadow: 2.5px 2.5px 0px var(--border-crisp);
-            transition: all 0.15s ease;
-            user-select: none;
-            flex: none;
+            gap: 8px;
+            background: var(--bg-card);
+            border: 1px solid var(--color-iron-border);
+            border-radius: 999px;
+            padding: 6px 12px;
+            text-decoration: none;
+            color: var(--color-text-main);
+            transition: all 0.25s var(--spring);
+            backdrop-filter: blur(8px);
         }
 
-        .pill-toggle-btn:active {
-            transform: translate(2px, 2px);
-            box-shadow: 1px 1px 0px var(--border-crisp);
+        .organizer-pill-anchor:hover {
+            border-color: var(--color-gold);
+            transform: translateY(-2px);
         }
 
-        #audioPill {
-            background: var(--volt-pure);
-            color: #0B0D11;
-        }
-
-        #audioPill.active {
-            background: #10B981;
-            color: #FFFFFF;
-        }
-
-        body.dark-mode #themePill {
-            background: #F3F4F6;
-            color: #0B0D11;
-        }
-
-        /* =========================================================
-           HERO LOGO: JERARQUÍA ABSOLUTA, MONUMENTAL Y LIBRE
-           ========================================================= */
-        .brand-hero-monument {
+        .organizer-svg-icon {
+            width: 22px;
+            height: 22px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin-bottom: 28px;
-            position: relative;
-        }
-
-        /* LOGO PRINCIPAL RECTOR */
-        .brand-main-title {
-            font-family: var(--font-display);
-            font-size: clamp(2.6rem, 11vw, 3.9rem);
-            font-weight: 900;
-            font-style: italic;
-            line-height: 0.9;
-            letter-spacing: 0.01em;
-            text-transform: uppercase;
-            color: var(--text-primary);
-            white-space: nowrap;
-            text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.08);
-            transition: color 0.2s ease;
-        }
-
-        body.dark-mode .brand-main-title {
-            text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.85);
-        }
-
-        .brand-main-title span {
-            color: var(--vt-orange);
-            white-space: nowrap;
-        }
-
-        /* LEMA ATLÉTICO EN CÁPSULA ARMONIZADA DE ALTO CONTRASTE */
-        .brand-motto-spread {
-            display: inline-flex;
             align-items: center;
             justify-content: center;
-            background: var(--bg-surface);
-            border: 1.5px solid var(--border-crisp);
-            border-radius: 999px;
-            padding: 5px 16px;
-            box-shadow: 2.5px 2.5px 0px var(--border-crisp);
-            font-family: var(--font-display);
-            font-size: clamp(0.85rem, 3.4vw, 1.02rem);
+        }
+
+        .organizer-svg-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: #FFFFFF;
+        }
+
+        .organizer-label {
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
             font-weight: 800;
-            letter-spacing: 0.12em;
+            letter-spacing: 0.08em;
             text-transform: uppercase;
-            color: var(--text-primary);
-            margin-top: 10px;
-            transition: all 0.25s ease;
         }
 
-        body.dark-mode .brand-motto-spread {
-            background: #181E29;
-            color: #FFFFFF;
-            border-color: rgba(255, 255, 255, 0.25);
-            box-shadow: 2px 2px 0px #000000;
-        }
-
-        /* CÁPSULA INDUSTRIAL DE UBICACIÓN */
-        .brand-location-capsule {
+        .theme-pill-action {
+            background: var(--bg-card);
+            border: 1px solid var(--color-iron-border);
+            border-radius: 999px;
+            padding: 6px 11px;
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--color-text-main);
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            background: var(--bg-surface);
-            border: 1.5px solid var(--border-crisp);
-            border-radius: 999px;
-            padding: 4px 13px;
-            box-shadow: 2px 2px 0px var(--border-crisp);
-            font-family: var(--font-mono);
-            font-size: clamp(0.66rem, 2.5vw, 0.74rem);
-            font-weight: 700;
-            text-transform: uppercase;
-            color: var(--text-primary);
-            margin-top: 8px;
-            transition: all 0.25s ease;
+            cursor: pointer;
+            transition: all 0.25s var(--spring);
         }
 
-        body.dark-mode .brand-location-capsule {
-            background: #181E29;
-            border-color: rgba(255, 255, 255, 0.25);
-            color: #FFFFFF;
-            box-shadow: 2px 2px 0px #000000;
+        .theme-pill-action:hover {
+            border-color: var(--color-gold);
+            transform: translateY(-2px);
         }
 
-        /* CÁPSULA MARISOL NOVI DE ALTA VISIBILIDAD */
-        .instructor-credit-line {
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            background: var(--bg-surface);
-            border: 1.5px solid var(--border-crisp);
-            border-radius: 999px;
-            padding: 5px 14px;
-            box-shadow: 2px 2px 0px var(--border-crisp);
-            font-family: var(--font-ui);
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-top: 8px;
-            transition: all 0.25s ease;
-        }
-
-        body.dark-mode .instructor-credit-line {
-            background: #181E29;
-            color: #FFFFFF;
-            border-color: rgba(255, 255, 255, 0.25);
-            box-shadow: 2px 2px 0px #000000;
-        }
-
-        .instructor-credit-line strong {
-            color: var(--vt-orange);
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-        }
-
-        body.dark-mode .instructor-credit-line strong {
-            color: var(--vt-orange-hot);
-            text-shadow: 0 0 8px rgba(255, 119, 0, 0.45);
-        }
-
-        .instructor-dot {
+        .theme-led-pulse {
             width: 7px;
             height: 7px;
             border-radius: 50%;
-            background: var(--volt-pure);
-            border: 1px solid #000;
+            background: var(--color-gold);
+            box-shadow: 0 0 10px var(--color-gold);
         }
 
-        /* =========================================================
-           ESTRUCTURA DEL MENÚ: CADENCIA RÍTMICA DINÁMICA
-           ========================================================= */
-        .arcade-menu-tree {
+        /* ==========================================================================
+           6. HERO BRAND MONUMENT (LOGO OFICIAL BIRRAZO + SELLO CCIC)
+           ========================================================================== */
+        .brand-monument-deck {
             display: flex;
             flex-direction: column;
-            width: 100%;
-        }
-
-        .rhythm-block-hero {
-            margin-bottom: 22px;
-        }
-
-        .rhythm-block-social {
-            margin-bottom: 14px;
-        }
-
-        .rhythm-block-gym {
-            margin-bottom: 22px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .rhythm-block-info {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-        }
-
-        /* CARD MASTER */
-        .sports-card {
-            background: var(--bg-surface);
-            border: 2px solid var(--border-crisp);
-            border-radius: 6px;
-            box-shadow: var(--shadow-hard);
-            padding: 16px 18px;
-            display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 14px;
-            text-decoration: none;
-            color: var(--text-primary);
-            position: relative;
-            cursor: pointer;
-            user-select: none;
-            transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
-            overflow: hidden;
-        }
-
-        .sports-card::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 5px;
-            background: var(--border-crisp);
-            transition: width 0.18s ease, background 0.18s ease;
-        }
-
-        /* MICRO-SOLAPAS DE VÉRTICE (16PX - NO OBSTRUYEN NADA) */
-        .corner-notch-orange::after,
-        .corner-notch-cyan::after,
-        .corner-notch-volt::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            pointer-events: none;
-            z-index: 5;
-        }
-
-        .corner-notch-orange::after {
-            border-width: 0 16px 16px 0;
-            border-color: transparent var(--vt-orange) transparent transparent;
-        }
-
-        .corner-notch-cyan::after {
-            border-width: 0 16px 16px 0;
-            border-color: transparent var(--we-cyan) transparent transparent;
-        }
-
-        .corner-notch-volt::after {
-            border-width: 0 16px 16px 0;
-            border-color: transparent var(--volt-pure) transparent transparent;
-        }
-
-        .sports-card:hover {
-            transform: translate(-3px, -3px);
-            box-shadow: var(--shadow-pop);
-        }
-
-        .sports-card:hover::before {
-            width: 7px;
-            background: var(--vt-orange);
-        }
-
-        .sports-card:active {
-            transform: translate(2px, 2px);
-            box-shadow: 2px 2px 0px var(--border-crisp);
-        }
-
-        /* HERO CARD: WHATSAPP */
-        .card-hero-pulse {
-            background: linear-gradient(100deg, var(--nike-black) 0%, var(--vt-blue-stadium) 100%);
-            color: #FFFFFF;
-            border-radius: 10px 4px 10px 4px;
-            border-color: var(--border-crisp);
-        }
-
-        body.dark-mode .card-hero-pulse {
-            background: linear-gradient(100deg, #181E29 0%, #101622 100%);
-            border-color: var(--vt-orange);
-        }
-
-        .card-hero-pulse::before {
-            background: var(--vt-orange);
-            width: 7px;
-        }
-
-        .card-hero-pulse .card-lead-title {
-            color: #FFFFFF;
-        }
-
-        .card-hero-pulse .card-lead-desc {
-            color: #E2E8F0;
-        }
-
-        .card-hero-pulse:hover {
-            box-shadow: 5px 5px 0px var(--vt-yellow);
-        }
-
-        /* ICON SHIELD INDUSTRIAL */
-        .sports-icon-shield {
-            width: 44px;
-            height: 44px;
-            min-width: 44px;
-            background: var(--bg-card-subtle);
-            border: 2px solid var(--border-crisp);
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-primary);
-            transition: all 0.18s ease;
-        }
-
-        .card-hero-pulse .sports-icon-shield {
-            background: var(--vt-orange);
-            color: #FFFFFF;
-            border-color: #FFFFFF;
-        }
-
-        .sports-card:hover .sports-icon-shield {
-            background: var(--vt-orange);
-            color: #FFFFFF;
-            transform: rotate(-3deg) scale(1.05);
-        }
-
-        .sports-icon-shield svg {
-            width: 22px;
-            height: 22px;
-        }
-
-        .card-text-block {
-            flex: 1;
-            min-width: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-        }
-
-        .card-tag-row {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .card-lead-title {
-            font-family: var(--font-display);
-            font-size: 1.45rem;
-            font-weight: 800;
-            font-style: italic;
-            text-transform: uppercase;
-            line-height: 1;
-            letter-spacing: 0.02em;
-        }
-
-        .nike-badge-pill {
-            font-family: var(--font-mono);
-            font-size: 0.62rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            padding: 2px 7px;
-            background: var(--bg-canvas);
-            border: 1.5px solid var(--border-crisp);
-            border-radius: 3px;
-            color: var(--text-primary);
-        }
-
-        .nike-badge-pill.hot {
-            background: var(--vt-orange);
-            color: #FFFFFF;
-            border-color: var(--vt-orange);
-        }
-
-        .nike-badge-pill.volt {
-            background: var(--volt-pure);
-            color: #000;
-            border-color: #000;
-        }
-
-        .card-lead-desc {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-secondary);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .arrow-action-fast {
-            font-family: var(--font-impact);
-            font-size: 1.35rem;
-            color: var(--vt-orange);
-            transition: transform 0.18s ease;
-        }
-
-        .sports-card:hover .arrow-action-fast {
-            transform: translateX(4px);
-        }
-
-        /* REDES SOCIALES */
-        .social-network-cluster {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            width: 100%;
-        }
-
-        .social-cell-btn {
-            background: var(--bg-surface);
-            border: 2px solid var(--border-crisp);
-            border-radius: 6px;
-            box-shadow: var(--shadow-hard);
-            padding: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            color: var(--text-primary);
-            position: relative;
-            overflow: hidden;
-            transition: all 0.16s ease;
-        }
-
-        .social-cell-btn:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 4px 4px 0px var(--vt-orange);
-        }
-
-        .social-cell-btn.instagram-cell:hover {
-            border-color: #E1306C;
-            box-shadow: 4px 4px 0px #E1306C;
-        }
-
-        .social-cell-btn.facebook-cell:hover {
-            border-color: #1877F2;
-            box-shadow: 4px 4px 0px #1877F2;
-        }
-
-        .social-cell-icon {
-            width: 36px;
-            height: 36px;
-            min-width: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 4px;
-            border: 1.5px solid var(--border-crisp);
-            background: var(--bg-card-subtle);
-        }
-
-        .social-cell-content {
-            display: flex;
-            flex-direction: column;
-            min-width: 0;
-        }
-
-        .social-cell-title {
-            font-family: var(--font-display);
-            font-size: 1.15rem;
-            font-weight: 900;
-            font-style: italic;
-            text-transform: uppercase;
-            line-height: 1;
-        }
-
-        .social-cell-handle {
-            font-family: var(--font-mono);
-            font-size: 0.68rem;
-            color: var(--text-secondary);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        /* DISCIPLINAS TÁCTICAS */
-        .tactical-stepper-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            width: 100%;
-        }
-
-        .step-module {
-            background: var(--bg-surface);
-            border: 2px solid var(--border-crisp);
-            border-radius: 5px;
-            box-shadow: 3px 3px 0px var(--border-crisp);
-            padding: 12px 13px;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            position: relative;
-            cursor: pointer;
-            transition: all 0.15s ease;
-            overflow: hidden;
-        }
-
-        .step-module:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 4px 4px 0px var(--vt-orange);
-            border-color: var(--vt-orange);
-        }
-
-        .step-module-index {
-            font-family: var(--font-mono);
-            font-size: 0.68rem;
-            font-weight: 800;
-            color: var(--vt-orange);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .step-module-title {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 800;
-            font-style: italic;
-            text-transform: uppercase;
-            line-height: 1;
-            color: var(--text-primary);
-        }
-
-        .step-module-desc {
-            font-size: 0.77rem;
-            line-height: 1.25;
-            color: var(--text-secondary);
-            font-weight: 600;
-        }
-
-        /* HORARIOS DE ATENCIÓN REALES */
-        .live-status-card {
-            background: var(--bg-surface);
-            border: 2px solid var(--border-crisp);
-            border-radius: 6px;
-            box-shadow: var(--shadow-hard);
-            padding: 16px 18px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .status-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .status-title {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-family: var(--font-display);
-            font-size: 1.3rem;
-            font-weight: 800;
-            font-style: italic;
-            text-transform: uppercase;
-        }
-
-        .live-match-clock {
-            display: flex;
-            flex-direction: column;
-            gap: 7px;
-            border-top: 1px dashed var(--border-light);
-            padding-top: 10px;
-        }
-
-        .time-row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 0.88rem;
-            font-weight: 700;
-            color: var(--text-secondary);
-        }
-
-        .time-row.active-today {
-            color: var(--vt-orange);
-        }
-
-        .time-row span.badge {
-            font-family: var(--font-mono);
-            font-size: 0.74rem;
-            background: var(--bg-card-subtle);
-            padding: 2px 7px;
-            border: 1px solid var(--border-crisp);
-            border-radius: 3px;
-            color: var(--text-primary);
-        }
-
-        .time-row.active-today span.badge {
-            background: var(--vt-orange);
-            color: #FFFFFF;
-            border-color: var(--vt-orange);
-        }
-
-        /* MAPA COCKPIT */
-        .stadium-map-box {
-            background: var(--bg-surface);
-            border: 2px solid var(--border-crisp);
-            border-radius: 6px;
-            box-shadow: var(--shadow-hard);
-            padding: 14px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .map-top-bar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .map-top-title {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 800;
-            font-style: italic;
-            text-transform: uppercase;
-        }
-
-        .map-embed-wrapper {
-            width: 100%;
-            height: 210px;
-            border: 2px solid var(--border-crisp);
-            border-radius: 4px;
-            overflow: hidden;
-            background: #D1D5DB;
-        }
-
-        .map-embed-wrapper iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-            display: block;
-        }
-
-        /* FOOTER DEPORTIVO */
-        .sports-footer {
-            margin-top: 36px;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .footer-stamp {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 900;
-            font-style: italic;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            color: var(--text-primary);
-        }
-
-        .footer-stamp span {
-            color: var(--vt-orange);
-        }
-
-        .footer-sub-legal {
-            font-family: var(--font-mono);
-            font-size: 0.68rem;
-            color: var(--text-secondary);
-        }
-
-        /* MODAL TÁCTICO DE PLANES & RUTINAS */
-        .tactical-modal-backdrop {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(11, 13, 17, 0.85);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            z-index: 99999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 16px;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.2s ease;
-        }
-
-        .tactical-modal-backdrop.open {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .tactical-modal-window {
-            background: var(--bg-surface);
-            border: 3px solid var(--border-crisp);
-            border-radius: 8px;
-            box-shadow: 8px 8px 0px var(--border-crisp);
-            width: 100%;
-            max-width: 460px;
-            max-height: 85vh;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            transform: scale(0.96);
-            transition: transform 0.2s ease;
-        }
-
-        .tactical-modal-backdrop.open .tactical-modal-window {
-            transform: scale(1);
-        }
-
-        .modal-banner-header {
-            background: var(--nike-black);
-            color: #FFFFFF;
-            padding: 14px 18px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 3px solid var(--vt-orange);
-        }
-
-        .modal-banner-header h3 {
-            font-family: var(--font-display);
-            font-size: 1.55rem;
-            font-weight: 900;
-            font-style: italic;
-            text-transform: uppercase;
-            color: var(--vt-yellow);
-        }
-
-        .btn-modal-exit {
-            background: var(--vt-orange);
-            border: 2px solid #FFFFFF;
-            border-radius: 4px;
-            color: #FFFFFF;
-            width: 32px;
-            height: 32px;
-            cursor: pointer;
-            font-family: var(--font-impact);
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .btn-modal-exit:hover {
-            background: #FFFFFF;
-            color: var(--nike-black);
-        }
-
-        .modal-scroll-area {
-            padding: 16px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
+            padding: 6px 4px 2px;
             gap: 12px;
         }
 
-        .training-spec-card {
-            background: var(--bg-card-subtle);
-            border: 2px solid var(--border-crisp);
-            border-left: 6px solid var(--vt-orange);
-            border-radius: 4px;
-            padding: 14px;
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-
-        .training-spec-card h4 {
-            font-family: var(--font-display);
-            font-size: 1.35rem;
-            font-weight: 800;
-            font-style: italic;
-            text-transform: uppercase;
-            color: var(--text-primary);
+        .logo-birrazo-stage {
+            width: 100%;
+            max-width: 320px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            position: relative;
+            filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.45));
+            animation: slowFloatBreath 6s ease-in-out infinite alternate;
         }
 
-        .training-spec-card p {
-            font-size: 0.88rem;
-            line-height: 1.38;
-            color: var(--text-secondary);
-            font-weight: 600;
+        @keyframes slowFloatBreath {
+            0% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-3px) scale(1.015); }
+            100% { transform: translateY(0px) scale(1); }
         }
 
-        .btn-direct-book {
-            align-self: flex-start;
-            margin-top: 6px;
-            background: var(--nike-black);
-            color: #FFFFFF;
-            text-decoration: none;
-            padding: 7px 14px;
-            font-family: var(--font-display);
-            font-size: 1.05rem;
+        .logo-birrazo-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero-title-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .edition-badge-live {
+            background: rgba(127, 168, 50, 0.16);
+            border: 1px solid rgba(127, 168, 50, 0.38);
+            color: #C2E877;
+            padding: 5px 12px;
+            border-radius: 999px;
+            font-family: var(--font-mono);
+            font-size: 0.66rem;
             font-weight: 800;
-            font-style: italic;
+            letter-spacing: 0.12em;
             text-transform: uppercase;
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            border: 1.5px solid var(--border-crisp);
-            border-radius: 4px;
-            transition: all 0.15s ease;
         }
 
-        .btn-direct-book:hover {
-            background: var(--vt-orange);
+        .pulse-core-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #88B324;
+            box-shadow: 0 0 8px #88B324;
+            animation: pulseRadio 1.7s infinite;
+        }
+
+        @keyframes pulseRadio {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(0.75); opacity: 0.4; }
+        }
+
+        .hero-lead-summary {
+            font-size: 0.86rem;
+            color: var(--color-text-muted);
+            line-height: 1.45;
+            max-width: 92%;
+            margin-top: 4px;
+        }
+
+        .hero-lead-summary strong {
+            color: var(--color-text-main);
+        }
+
+        .badges-capsule-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            flex-wrap: wrap;
+            margin-top: 6px;
+        }
+
+        .pill-badge-seal {
+            background: var(--bg-card);
+            border: 1px solid var(--color-iron-border);
+            border-radius: 999px;
+            padding: 5px 11px;
+            font-size: 0.68rem;
+            font-weight: 800;
+            color: var(--color-text-main);
+            letter-spacing: 0.04em;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* ==========================================================================
+           7. VIDEO REEL SHOWCASE CON CONTROLES SUAVES
+           ========================================================================== */
+        .video-reel-container {
+            width: 100%;
+            height: 380px;
+            border-radius: 24px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--color-iron-border);
+            box-shadow: var(--shadow-float);
+            background: #000000;
+        }
+
+        .video-ambient-player {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(0.92);
+        }
+
+        .video-gradient-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.40) 50%, rgba(18,21,16,0.92) 100%);
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .video-content-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 18px;
+            z-index: 3;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .video-text-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .video-pill-tag {
+            align-self: flex-start;
+            font-family: var(--font-mono);
+            font-size: 0.62rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 3px 9px;
+            border-radius: 999px;
+            background: var(--color-gold);
+            color: #0E100C;
+        }
+
+        .video-title-bold {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 900;
+            line-height: 1.15;
+            text-transform: uppercase;
+        }
+
+        .video-controls-bubble {
+            display: flex;
+            gap: 8px;
+        }
+
+        .video-btn-action {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.20);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(8px);
             color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.90rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .video-btn-action:hover {
+            transform: scale(1.1);
+            background: var(--color-gold);
+            color: #000000;
+        }
+
+        /* ==========================================================================
+           8. GRILLA BENTO DINÁMICA DE INFORMACIÓN CRUCIAL
+           ========================================================================== */
+        .morph-bento-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .bento-cell {
+            padding: 18px 16px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--color-iron-border);
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.28s var(--spring);
+            min-height: 148px;
+        }
+
+        .bento-cell:hover {
+            transform: translateY(-4px);
+            border-color: var(--color-iron-hover);
+        }
+
+        /* 1. HORARIO & ACCESO (VERDE LÚPULO) */
+        .cell-schedule {
+            background: linear-gradient(150deg, #263816 0%, #16240C 100%);
+            color: #FFFFFF;
+            border-color: rgba(127, 168, 50, 0.35);
+        }
+
+        .cell-schedule::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 90px;
+            height: 90px;
+            background: radial-gradient(circle, rgba(127, 168, 50, 0.3) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        /* 2. PINTAS & PRECIOS (DORADO AMBARINO) */
+        .cell-pricing {
+            background: linear-gradient(150deg, #442E06 0%, #291A02 100%);
+            color: #FFFFFF;
+            border-color: rgba(242, 169, 0, 0.35);
+        }
+
+        .cell-pricing .sticker-beer-badge {
+            position: absolute;
+            right: 8px;
+            bottom: 8px;
+            width: 52px;
+            height: auto;
+            opacity: 0.9;
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+            transition: transform 0.3s ease;
+        }
+
+        .cell-pricing:hover .sticker-beer-badge {
+            transform: scale(1.12) rotate(6deg);
+        }
+
+        /* 3. BANDA LA JAMBOREE */
+        .cell-jamboree {
+            background: var(--bg-card);
+            color: var(--color-text-main);
+        }
+
+        /* 4. BANDA MUSHA SOUL */
+        .cell-musha {
+            background: var(--bg-card);
+            color: var(--color-text-main);
+        }
+
+        /* 5. TARJETA COMPLETA: CÓMO LLEGAR (MUSEO DE LA INDUSTRIA) */
+        .cell-wide-location {
+            grid-column: span 2;
+            min-height: auto;
+            background: linear-gradient(160deg, #242A20 0%, #181E15 100%);
+            border: 1px solid rgba(242, 169, 0, 0.3);
+            border-left: 6px solid var(--color-gold);
+            padding: 18px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+        }
+
+        .cell-top-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+
+        .cell-mini-tag {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .cell-arrow-icon {
+            font-family: var(--font-mono);
+            font-size: 1.1rem;
+            font-weight: 800;
+            transition: transform 0.25s ease;
+        }
+
+        .bento-cell:hover .cell-arrow-icon {
+            transform: translate(3px, -3px);
+        }
+
+        .cell-hero-title {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 900;
+            line-height: 1.12;
+            letter-spacing: -0.01em;
+        }
+
+        .cell-hero-desc {
+            font-size: 0.76rem;
+            margin-top: 5px;
+            line-height: 1.4;
+            color: var(--color-text-muted);
+        }
+
+        /* ==========================================================================
+           9. SHOWCASE DE CERVECERÍAS & FOOD TRUCKS
+           ========================================================================== */
+        .showcase-flow-deck {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 4px;
+        }
+
+        .showcase-header-row {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            padding: 0 4px;
+        }
+
+        .showcase-title-main {
+            font-family: var(--font-display);
+            font-size: 1.18rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.01em;
+        }
+
+        .showcase-sub-tag {
+            font-family: var(--font-mono);
+            font-size: 0.70rem;
+            font-weight: 800;
+            color: var(--color-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .horizontal-snap-carousel {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 4px 2px 14px;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .horizontal-snap-carousel::-webkit-scrollbar { display: none; }
+
+        .brewery-card-tile {
+            flex: 0 0 190px;
+            scroll-snap-align: start;
+            background: var(--bg-card);
+            border: 1px solid var(--color-iron-border);
+            border-radius: 18px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--color-text-main);
+            transition: all 0.25s var(--spring);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .brewery-card-tile:hover {
+            transform: translateY(-4px);
+            border-color: var(--color-gold);
+        }
+
+        .card-poster-frame {
+            width: 100%;
+            height: 140px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #191E16;
+            position: relative;
+        }
+
+        .card-poster-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .brewery-card-tile:hover .card-poster-frame img {
+            transform: scale(1.08);
+        }
+
+        .card-corner-badge {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            font-family: var(--font-mono);
+            font-size: 0.58rem;
+            font-weight: 800;
+            padding: 3px 8px;
+            border-radius: 999px;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(6px);
+            color: var(--color-gold);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .card-title-text {
+            font-size: 0.88rem;
+            font-weight: 800;
+            line-height: 1.25;
+            text-transform: uppercase;
+        }
+
+        .card-meta-text {
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            color: var(--color-text-muted);
+        }
+
+        /* ==========================================================================
+           10. SOCIAL PROOF & GALERÍA VIVA EN EL MUSEO
+           ========================================================================== */
+        .live-photo-deck {
+            background: var(--bg-card);
+            border: 1px solid var(--color-iron-border);
+            border-radius: 24px;
+            padding: 18px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .gallery-track-slider {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 4px;
+            scrollbar-width: none;
+        }
+
+        .gallery-track-slider::-webkit-scrollbar { display: none; }
+
+        .gallery-photo-item {
+            flex: 0 0 135px;
+            height: 185px;
+            scroll-snap-align: start;
+            border-radius: 14px;
+            overflow: hidden;
+            position: relative;
+            background: #191E16;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform 0.25s ease;
+        }
+
+        .gallery-photo-item:hover {
+            transform: scale(1.04);
+        }
+
+        .gallery-photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo-floating-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 8px 6px 6px;
+            background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+            font-family: var(--font-mono);
+            font-size: 0.62rem;
+            font-weight: 800;
+            color: #FFFFFF;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* ==========================================================================
+           11. TARJETA INSTITUCIONAL COPA LIGA DEL CENTRO 2026
+           ========================================================================== */
+        .copa-feature-card {
+            background: linear-gradient(160deg, #1A1F16 0%, #10130D 100%);
+            border: 1.5px solid var(--color-iron-border);
+            border-radius: 22px;
+            padding: 20px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            box-shadow: var(--shadow-float);
+        }
+
+        .copa-badge-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .copa-title {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: var(--color-gold);
+            text-transform: uppercase;
+        }
+
+        .copa-buttons-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .btn-copa-action {
+            background: var(--bg-card-elevated);
+            border: 1px solid var(--color-iron-border);
+            border-radius: 12px;
+            padding: 10px 8px;
+            text-decoration: none;
+            color: var(--color-text-main);
+            font-family: var(--font-mono);
+            font-size: 0.70rem;
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+            transition: all 0.22s var(--spring);
+        }
+
+        .btn-copa-action:hover {
+            background: var(--color-gold);
+            color: #0E100C;
+            border-color: var(--color-gold);
+            transform: translateY(-2px);
+        }
+
+        /* ==========================================================================
+           12. FOOTER NOBLE & ALIANZAS
+           ========================================================================== */
+        .footer-noble-deck {
+            margin-top: 10px;
+            padding-top: 24px;
+            border-top: 1px dashed rgba(242, 169, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 12px;
+        }
+
+        .footer-logos-stack {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            max-width: 360px;
+        }
+
+        .footer-logo-item {
+            height: 38px;
+            width: auto;
+            object-fit: contain;
+            opacity: 0.85;
+            transition: opacity 0.2s ease;
+        }
+
+        .footer-logo-item:hover {
+            opacity: 1;
+        }
+
+        .footer-legal-copy {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            color: var(--color-text-faded);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            line-height: 1.5;
+        }
+
+        /* ==========================================================================
+           13. BOTÓN FLOTANTE CÓMO LLEGAR (GOOGLE MAPS DIRECTO)
+           ========================================================================== */
+        .floating-action-portal {
+            position: fixed;
+            bottom: 20px;
+            right: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 999;
+            text-decoration: none;
+        }
+
+        .floating-label-pill {
+            background: var(--color-gold);
+            color: #0E100C;
+            font-family: var(--font-mono);
+            font-size: 0.70rem;
+            font-weight: 900;
+            padding: 8px 14px;
+            border-radius: 999px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .floating-circle-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--color-hop-green);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 24px rgba(127, 168, 50, 0.5);
+            transition: transform 0.25s var(--spring);
+            font-size: 1.3rem;
+        }
+
+        .floating-action-portal:hover .floating-circle-btn {
+            transform: scale(1.1) translateY(-2px);
         }
     </style>
 </head>
-<body>
+<body data-theme="default">
 
-    <!-- SCANLINES CONSOLA DEPORTIVA -->
-    <div class="arcade-scanlines"></div>
+    <!-- 1. PATRÓN CINEMÁTICO DIAGONAL CONTINUO (CEBADA + VASO DE CERVEZA) -->
+    <div class="ambient-diagonal-drift" aria-hidden="true"></div>
+    <div class="ambient-vignette-veil" aria-hidden="true"></div>
 
-    <!-- CANVAS DE FONDO REACTIVO -->
-    <div class="arcade-energy-canvas">
-        <canvas id="motionCanvas"></canvas>
-    </div>
-
-    <!-- TICKER NIKE PITCH SUPERIOR CON LOOP INFINITO (SIN ESPACIOS NI HUECOS) -->
-    <div class="nike-pitch-bar">
-        <div class="pitch-ticker-wrap">
-            <div class="pitch-ticker-track">
-                <!-- MITAD A (50% DEL TRACK) -->
-                <div class="pitch-ticker-content">
-                    MUSCULACIÓN & PESO LIBRE <span>///</span> RUTINAS PERSONALIZADAS <span>///</span> PUERTO IGUAZÚ <span>///</span> SIN EXCUSAS <span>///</span> DYNAMIC GYM 2 FUERZA REAL <span>///</span>&nbsp;
-                    MUSCULACIÓN & PESO LIBRE <span>///</span> RUTINAS PERSONALIZADAS <span>///</span> PUERTO IGUAZÚ <span>///</span> SIN EXCUSAS <span>///</span> DYNAMIC GYM 2 FUERZA REAL <span>///</span>&nbsp;
-                    MUSCULACIÓN & PESO LIBRE <span>///</span> RUTINAS PERSONALIZADAS <span>///</span> PUERTO IGUAZÚ <span>///</span> SIN EXCUSAS <span>///</span> DYNAMIC GYM 2 FUERZA REAL <span>///</span>&nbsp;
-                </div>
-                <!-- MITAD B (50% DEL TRACK - COPIA IDÉNTICA PARA EMPALME MATEMÁTICO INFINITO) -->
-                <div class="pitch-ticker-content" aria-hidden="true">
-                    MUSCULACIÓN & PESO LIBRE <span>///</span> RUTINAS PERSONALIZADAS <span>///</span> PUERTO IGUAZÚ <span>///</span> SIN EXCUSAS <span>///</span> DYNAMIC GYM 2 FUERZA REAL <span>///</span>&nbsp;
-                    MUSCULACIÓN & PESO LIBRE <span>///</span> RUTINAS PERSONALIZADAS <span>///</span> PUERTO IGUAZÚ <span>///</span> SIN EXCUSAS <span>///</span> DYNAMIC GYM 2 FUERZA REAL <span>///</span>&nbsp;
-                    MUSCULACIÓN & PESO LIBRE <span>///</span> RUTINAS PERSONALIZADAS <span>///</span> PUERTO IGUAZÚ <span>///</span> SIN EXCUSAS <span>///</span> DYNAMIC GYM 2 FUERZA REAL <span>///</span>&nbsp;
-                </div>
-            </div>
+    <!-- 2. MARQUESINA DE ALERTA & INFO VIVA -->
+    <aside class="marquee-alert-tape" aria-label="Novedades oficiales del Birrazo">
+        <div class="marquee-track-flow">
+            <span>🔥 VUELVE EL BIRRAZO</span>
+            <span>•</span>
+            <span>SÁBADO 7 DE NOVIEMBRE · 18 A 00 H</span>
+            <span>•</span>
+            <span>MUSEO DE LA INDUSTRIA CÓRDOBA</span>
+            <span>•</span>
+            <span>ENTRADA LIBRE Y GRATUITA</span>
+            <span>•</span>
+            <span>PINTA $5.000 · ECOVASO $1.000</span>
+            <span>•</span>
+            <span>10 CERVECERÍAS INDEPENDIENTES</span>
+            <span>•</span>
+            <span>FOOD TRUCKS &amp; MÚSICA EN VIVO</span>
+            <span>•</span>
+            <span>🔥 VUELVE EL BIRRAZO</span>
+            <span>•</span>
+            <span>SÁBADO 7 DE NOVIEMBRE · 18 A 00 H</span>
+            <span>•</span>
+            <span>MUSEO DE LA INDUSTRIA CÓRDOBA</span>
+            <span>•</span>
         </div>
-    </div>
+    </aside>
 
-    <!-- CONTENEDOR CENTRAL -->
-    <main class="hub-container">
+    <!-- 3. SHELL PRINCIPAL MOBILE -->
+    <main class="master-hub-shell">
 
-        <!-- 1. TOP NAV: BOTONES COMPACTOS EN LOS EXTREMOS -->
-        <div class="top-nav-cluster">
-            <button type="button" class="pill-toggle-btn" id="themePill" onclick="toggleSportsTheme()" title="Cambiar modo de luz">
-                <span id="themePillText">MODO OSCURO</span>
+        <!-- HEADER CONTROLS -->
+        <header class="top-deck-controls">
+            <a href="https://www.instagram.com/ligadelcentro.ccic" target="_blank" rel="noopener noreferrer" class="organizer-pill-anchor" onclick="playTap()">
+                <div class="organizer-svg-icon">
+                    <svg viewBox="0 0 694.9 674.64" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M494.7,350.91H205.57c-5.59,0-8.83,6.34-5.55,10.87l51.36,70.84c2.73,3.77,8.36,3.77,11.09,0l45.67-63c2.43-3.35,7.41-3.35,9.84,0l26.53,36.59c2.73,3.77,8.36,3.77,11.09,0l26.6-36.69c2.43-3.35,7.41-3.35,9.84,0l45.75,63.1c2.73,3.77,8.36,3.77,11.09,0l51.36-70.84c3.28-4.53.05-10.87-5.55-10.87Z"/>
+                        <path d="M344.81,551.47l-34.78-47.97c-3.28-4.53-.05-10.87,5.55-10.87h69.56c5.59,0,8.83,6.34,5.55,10.87l-34.78,47.97c-2.73,3.77-8.36,3.77-11.09,0Z"/>
+                        <path d="M344.52,477.07l-32.21-44.43c-3.28-4.53-.05-10.87,5.55-10.87h64.43c5.59,0,8.83,6.34,5.55,10.87l-32.21,44.43c-2.73,3.77-8.36,3.77-11.09,0Z"/>
+                    </svg>
+                </div>
+                <span class="organizer-label">La Liga del Centro</span>
+            </a>
+
+            <button class="theme-pill-action" onclick="toggleBirrazoTheme()" title="Cambiar tema">
+                <span class="theme-led-pulse"></span>
+                <span id="themeLabelText">Lúpulo Mode</span>
             </button>
-
-            <button type="button" class="pill-toggle-btn" id="audioPill" onclick="toggleArcadeBeat()" title="Activar música de sala">
-                <span id="audioPillText">MÚSICA: OFF</span>
-            </button>
-        </div>
-
-        <!-- 2. HERO LOGO: JERARQUÍA ABSOLUTA CON CÁPSULAS DE ALTA LEGIBILIDAD -->
-        <header class="brand-hero-monument">
-            <h1 class="brand-main-title">DYNAMIC <span>GYM 2</span></h1>
-            
-            <!-- RECUADRO CÁPSULA: LEMA -->
-            <div class="brand-motto-spread">FUERZA · RENDIMIENTO · DISCIPLINA</div>
-            
-            <!-- RECUADRO CÁPSULA: UBICACIÓN -->
-            <div class="brand-location-capsule">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span>Av. Misiones 211 · Puerto Iguazú</span>
-            </div>
-
-            <!-- RECUADRO CÁPSULA: MARISOL NOVI -->
-            <div class="instructor-credit-line">
-                <span class="instructor-dot"></span>
-                <span>Coaching & Dirección: <strong>Marisol Novi</strong></span>
-            </div>
         </header>
 
-        <!-- 3. MENÚ PRINCIPAL: CADENCIA RÍTMICA DINÁMICA -->
-        <section class="arcade-menu-tree">
-
-            <!-- HERO CARD: WHATSAPP -->
-            <div class="rhythm-block-hero">
-                <a href="https://wa.me/5493757000000?text=Hola%20Dynamic%20Gym%202!%20Quiero%20consultar%20por%20inscripciones%20y%20precios%20de%20cuota." target="_blank" rel="noopener noreferrer" class="sports-card card-hero-pulse corner-notch-volt" onclick="playArcadeClick()">
-                    <div class="sports-icon-shield">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.59-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
-                        </svg>
-                    </div>
-                    <div class="card-text-block">
-                        <div class="card-tag-row">
-                            <span class="card-lead-title">Inscripciones & Cuotas</span>
-                            <span class="nike-badge-pill volt">Consulta Inmediata</span>
-                        </div>
-                        <span class="card-lead-desc">Valores mensuales, pases diarios y promociones</span>
-                    </div>
-                    <span class="arrow-action-fast">▶</span>
-                </a>
+        <!-- HERO MONUMENTO: LOGO OFICIAL BIRRAZO -->
+        <section class="brand-monument-deck">
+            <div class="logo-birrazo-stage" onclick="playTap()">
+                <img src="BIRRAZO - LOGO.png" alt="Birrazo en el Museo de la Industria - Logo Oficial" class="logo-birrazo-img">
             </div>
 
-            <!-- REDES SOCIALES -->
-            <div class="rhythm-block-social">
-                <div class="social-network-cluster">
-                    <a href="https://www.instagram.com/dynamic_gym_2/" target="_blank" rel="noopener noreferrer" class="social-cell-btn instagram-cell corner-notch-orange" onclick="playArcadeClick()">
-                        <div class="social-cell-icon" style="color:#E1306C;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                        </div>
-                        <div class="social-cell-content">
-                            <span class="social-cell-title">Instagram</span>
-                            <span class="social-cell-handle">@dynamic_gym_2</span>
-                        </div>
-                    </a>
+            <div class="hero-title-group">
+                <span class="edition-badge-live">
+                    <span class="pulse-core-dot"></span>
+                    Cierre 3° Encuentro Binacional de Lúpulo
+                </span>
 
-                    <a href="https://www.facebook.com/marisol.novi.2025" target="_blank" rel="noopener noreferrer" class="social-cell-btn facebook-cell corner-notch-cyan" onclick="playArcadeClick()">
-                        <div class="social-cell-icon" style="color:#1877F2;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </div>
-                        <div class="social-cell-content">
-                            <span class="social-cell-title">Facebook</span>
-                            <span class="social-cell-handle">Marisol Novi</span>
-                        </div>
-                    </a>
+                <p class="hero-lead-summary">
+                    El encuentro que reúne lo mejor de la <strong>cerveza independiente cordobesa</strong>, gastronomía de autor y amigos para brindar.
+                </p>
+
+                <div class="badges-capsule-row">
+                    <span class="pill-badge-seal">📍 Museo de la Industria</span>
+                    <span class="pill-badge-seal">🎟️ Entrada Gratis</span>
+                    <span class="pill-badge-seal">🍺 Pinta $5.000</span>
+                    <span class="pill-badge-seal">🎷 Música en Vivo</span>
                 </div>
             </div>
+        </section>
 
-            <!-- SALA & DISCIPLINAS -->
-            <div class="rhythm-block-gym">
-                <div class="sports-card corner-notch-cyan" onclick="openTacticalModal(); playArcadeClick();">
-                    <div class="sports-icon-shield">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                            <line x1="6" y1="12" x2="18" y2="12"/>
-                            <line x1="12" y1="6" x2="12" y2="18"/>
-                            <circle cx="12" cy="12" r="9"/>
-                        </svg>
-                    </div>
-                    <div class="card-text-block">
-                        <div class="card-tag-row">
-                            <span class="card-lead-title">Planes & Áreas de Sala</span>
-                            <span class="nike-badge-pill">Ver Todo</span>
-                        </div>
-                        <span class="card-lead-desc">Fuerza · Hipertrofia · Cardio · Rutinas Guiadas</span>
-                    </div>
-                    <span class="arrow-action-fast">▶</span>
+        <!-- VIDEO REEL EN VIVO (OPTIMIZADO & AMBIENTAL) -->
+        <section class="video-reel-container">
+            <video id="birrazoVideoPlayer" class="video-ambient-player" autoplay loop muted playsinline poster="banner-todoloquetenesquesaber.jpg">
+                <source src="1105 (2) (1) (1).mp4" type="video/mp4">
+            </video>
+            <div class="video-gradient-overlay"></div>
+
+            <div class="video-content-footer">
+                <div class="video-text-meta">
+                    <span class="video-pill-tag">Así se vive el Birrazo</span>
+                    <h2 class="video-title-bold">Sábado 7 Nov · 18 a 00 h</h2>
+                    <span style="font-size: 0.74rem; color: #DDD;">Ingreso por calle Coronel Pringles, B° Gral Paz</span>
                 </div>
 
-                <div class="tactical-stepper-grid">
-                    <div class="step-module corner-notch-orange" onclick="openTacticalModal(); playArcadeClick();">
-                        <div class="step-module-index">
-                            <span>SECTOR 01</span>
-                            <span style="color:var(--vt-orange);">▲</span>
-                        </div>
-                        <span class="step-module-title">Peso Libre</span>
-                        <span class="step-module-desc">Mancuernas de alto kilaje, bancos regulables y barras olímpicas.</span>
-                    </div>
-
-                    <div class="step-module corner-notch-cyan" onclick="openTacticalModal(); playArcadeClick();">
-                        <div class="step-module-index">
-                            <span>SECTOR 02</span>
-                            <span style="color:var(--we-cyan);">▲</span>
-                        </div>
-                        <span class="step-module-title">Máquinas Guía</span>
-                        <span class="step-module-desc">Prensa 45°, poleas de dorsales y estaciones guiadas.</span>
-                    </div>
-
-                    <div class="step-module corner-notch-volt" onclick="openTacticalModal(); playArcadeClick();">
-                        <div class="step-module-index">
-                            <span>SECTOR 03</span>
-                            <span style="color:var(--volt-pure);">▲</span>
-                        </div>
-                        <span class="step-module-title">Cardio & Trote</span>
-                        <span class="step-module-desc">Cintas de correr y bicicletas para resistencia y calentamiento.</span>
-                    </div>
-
-                    <div class="step-module corner-notch-orange" onclick="openTacticalModal(); playArcadeClick();">
-                        <div class="step-module-index">
-                            <span>SECTOR 04</span>
-                            <span style="color:var(--vt-yellow);">▲</span>
-                        </div>
-                        <span class="step-module-title">Rutinas Guiadas</span>
-                        <span class="step-module-desc">Seguimiento en sala tanto para principiantes como avanzados.</span>
-                    </div>
+                <div class="video-controls-bubble">
+                    <button class="video-btn-action" id="audioToggleBtn" onclick="toggleVideoAudio()" title="Activar/Silenciar sonido">
+                        🔊
+                    </button>
                 </div>
             </div>
+        </section>
 
-            <!-- INFO: HORARIOS, MAPA Y PAGOS -->
-            <div class="rhythm-block-info">
-                <div class="live-status-card corner-notch-volt" onclick="playArcadeClick()">
-                    <div class="status-header">
-                        <div class="status-title">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                            <span>Horarios de Atención</span>
-                        </div>
-                        <span class="nike-badge-pill hot" id="liveMatchPill">Comprobando...</span>
-                    </div>
+        <!-- GRILLA BENTO MORFOLÓGICA CON DATA DURA -->
+        <section class="morph-bento-grid">
 
-                    <div class="live-match-clock">
-                        <div class="time-row" id="row-mon-fri">
-                            <span>Lunes a Viernes</span>
-                            <span class="badge">07:00 a 11:30 | 14:30 a 21:30</span>
-                        </div>
-                        <div class="time-row" id="row-sat">
-                            <span>Sábados</span>
-                            <span class="badge">08:00 a 11:00 hs</span>
-                        </div>
-                        <div class="time-row" id="row-sun">
-                            <span>Domingos</span>
-                            <span class="badge" style="color: var(--vt-orange);">Cerrado</span>
-                        </div>
-                    </div>
+            <!-- 1. HORARIO & ACCESO -->
+            <article class="bento-cell cell-schedule" onclick="playTap()">
+                <div class="cell-top-row">
+                    <span class="cell-mini-tag" style="color: #BBE870;">HORARIOS</span>
+                    <span class="cell-arrow-icon">🕕</span>
                 </div>
-
-                <div class="stadium-map-box corner-notch-orange" onclick="playArcadeClick()">
-                    <div class="map-top-bar">
-                        <div class="map-top-title">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--vt-orange)" stroke-width="2.5"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/></svg>
-                            <span>Ubicación en Puerto Iguazú</span>
-                        </div>
-                        <span class="nike-badge-pill">Av. Misiones 211</span>
-                    </div>
-                    <div class="map-embed-wrapper">
-                        <iframe 
-                            src="https://maps.google.com/maps?q=Av.+Misiones+211,+Puerto+Iguaz%C3%BA,+Misiones,+Argentina&t=&z=16&ie=UTF8&iwloc=&output=embed" 
-                            loading="lazy" 
-                            allowfullscreen="" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
+                <div>
+                    <h3 class="cell-hero-title">18:00 a 00:00 h</h3>
+                    <p class="cell-hero-desc">Entrada libre y gratuita. Ingreso por orden de llegada hasta agotar capacidad.</p>
                 </div>
+            </article>
 
-                <div class="sports-card corner-notch-cyan" style="cursor: default;" onclick="playArcadeClick()">
-                    <div class="sports-icon-shield" style="color: var(--we-cyan);">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-                    </div>
-                    <div class="card-text-block">
-                        <div class="card-tag-row">
-                            <span class="card-lead-title">Medios de Pago</span>
-                            <span class="nike-badge-pill">Habilitados</span>
-                        </div>
-                        <span class="card-lead-desc">Efectivo · Mercado Pago · Transferencias bancarias</span>
-                    </div>
-                    <span class="arrow-action-fast" style="color: var(--we-cyan);">✓</span>
+            <!-- 2. PRECIOS DE BARRA & ECOVASO -->
+            <article class="bento-cell cell-pricing" onclick="playTap()">
+                <div class="cell-top-row">
+                    <span class="cell-mini-tag" style="color: #FFCF66;">BARRA INDEPENDIENTE</span>
+                    <span class="cell-arrow-icon">🍺</span>
                 </div>
-            </div>
+                <div>
+                    <h3 class="cell-hero-title">Pinta $5.000</h3>
+                    <p class="cell-hero-desc">Ecovaso $1.000 (¡Podés traer tu vaso de ediciones anteriores!).</p>
+                </div>
+                <img src="recursocerveza.png" alt="Vaso Birrazo" class="sticker-beer-badge">
+            </article>
+
+            <!-- 3. BANDA: LA JAMBOREE -->
+            <a href="https://www.instagram.com/lajamboree" target="_blank" rel="noopener noreferrer" class="bento-cell cell-jamboree" onclick="playTap()">
+                <div class="cell-top-row">
+                    <span class="cell-mini-tag" style="color: var(--color-gold);">EN VIVO · 20:00 H</span>
+                    <span class="cell-arrow-icon">↗</span>
+                </div>
+                <div>
+                    <h3 class="cell-hero-title">La Jamboree</h3>
+                    <p class="cell-hero-desc">Swing, jazz bailable y fiesta en el patio del museo.</p>
+                </div>
+            </a>
+
+            <!-- 4. BANDA: MUSHA SOUL -->
+            <a href="https://www.instagram.com/mushasoul" target="_blank" rel="noopener noreferrer" class="bento-cell cell-musha" onclick="playTap()">
+                <div class="cell-top-row">
+                    <span class="cell-mini-tag" style="color: #97C73C;">EN VIVO · 21:30 H</span>
+                    <span class="cell-arrow-icon">↗</span>
+                </div>
+                <div>
+                    <h3 class="cell-hero-title">Musha Soul</h3>
+                    <p class="cell-hero-desc">Funk, soul, groove y baile bajo las estrellas.</p>
+                </div>
+            </a>
+
+            <!-- 5. UBICACIÓN COMPLETA: CÓMO LLEGAR -->
+            <a href="https://maps.google.com/?q=Museo+de+la+Industria+Cordoba+Pringles" target="_blank" rel="noopener noreferrer" class="bento-cell cell-wide-location" onclick="playTap()">
+                <div style="flex:1;">
+                    <div class="cell-top-row" style="margin-bottom: 2px;">
+                        <span class="cell-mini-tag" style="color: var(--color-gold);">UBICACIÓN &amp; ACCESO</span>
+                    </div>
+                    <h3 class="cell-hero-title">Museo de la Industria</h3>
+                    <p class="cell-hero-desc">Ingreso peatonal exclusivo por calle <strong>Coronel Pringles</strong> (B° General Paz, Córdoba).</p>
+                </div>
+                <span class="cell-arrow-icon" style="color: var(--color-gold); font-size: 1.4rem;">📍</span>
+            </a>
 
         </section>
 
-        <!-- FOOTER DEPORTIVO -->
-        <footer class="sports-footer">
-            <div class="footer-stamp">
-                DYNAMIC <span>GYM 2</span> · PUERTO IGUAZÚ
+        <!-- 4. SLIDER DE CERVECERÍAS PARTICIPANTES -->
+        <section class="showcase-flow-deck">
+            <div class="showcase-header-row">
+                <span class="showcase-title-main">10 Cervecerías Locales</span>
+                <span class="showcase-sub-tag">Pizarras Listas</span>
             </div>
-            <span class="footer-sub-legal">AV. MISIONES 211 · MISIONES · PROF. MARISOL NOVI</span>
+
+            <div class="horizontal-snap-carousel">
+                
+                <!-- CERVECERÍA 1 -->
+                <a href="https://www.instagram.com/aton.cerveza" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Canillas</span>
+                        <img src="cervecerias.jpg" alt="Aton Cerveza" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Aton Beer</span>
+                    <span class="card-meta-text">@aton.cerveza</span>
+                </a>
+
+                <!-- CERVECERÍA 2 -->
+                <a href="https://www.instagram.com/arthurcerveza" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Canillas</span>
+                        <img src="1.jpg" alt="Arthur Cervecería" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Arthur</span>
+                    <span class="card-meta-text">@arthurcerveza</span>
+                </a>
+
+                <!-- CERVECERÍA 3 -->
+                <a href="https://www.instagram.com/elixia.artbeer.ok" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Canillas</span>
+                        <img src="2.jpg" alt="Elixia Art Beer" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Elixia Art Beer</span>
+                    <span class="card-meta-text">@elixia.artbeer.ok</span>
+                </a>
+
+                <!-- CERVECERÍA 4 -->
+                <a href="https://www.instagram.com/kral.cerveza.artesanal" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Canillas</span>
+                        <img src="3.jpg" alt="Kral Microcervecería" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Kral Artesanal</span>
+                    <span class="card-meta-text">@kral.cerveza.artesanal</span>
+                </a>
+
+                <!-- CERVECERÍA 5 -->
+                <a href="https://www.instagram.com/calvu.cerveza" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Canillas</span>
+                        <img src="4.jpg" alt="Calvú Cerveza" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Calvú</span>
+                    <span class="card-meta-text">@calvu.cerveza</span>
+                </a>
+
+                <!-- CERVECERÍA 6 -->
+                <a href="https://www.instagram.com/penonbiertruck" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Canillas</span>
+                        <img src="_DSC1078.jpg" alt="Peñón del Águila" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Peñón del Águila</span>
+                    <span class="card-meta-text">@penonbiertruck</span>
+                </a>
+
+                <!-- CERVECERÍA 7 -->
+                <a href="https://www.instagram.com/delfoydidara.cervezas" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Canillas</span>
+                        <img src="_DSC1082.jpg" alt="Didara y Delfo" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Didara &amp; Delfo</span>
+                    <span class="card-meta-text">@delfoydidara.cervezas</span>
+                </a>
+
+                <!-- CERVECERÍA 8 -->
+                <a href="https://www.instagram.com/bufondelreycerveceria" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Canillas</span>
+                        <img src="cervecerias.jpg" alt="Bufón del Rey" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Bufón del Rey</span>
+                    <span class="card-meta-text">@bufondelreycerveceria</span>
+                </a>
+
+                <!-- CERVECERÍA 9 -->
+                <a href="https://www.instagram.com/gius.cerveceria" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Canillas</span>
+                        <img src="preciopintas.jpg" alt="La Tertulia de Gius" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Gius Cervecería</span>
+                    <span class="card-meta-text">@gius.cerveceria</span>
+                </a>
+
+                <!-- CERVECERÍA 10 -->
+                <a href="https://www.instagram.com/choppcassarooficial" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Canillas</span>
+                        <img src="cervecerias.jpg" alt="Chopp Cassaro" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Cassaro</span>
+                    <span class="card-meta-text">@choppcassarooficial</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- 5. SLIDER DE FOOD TRUCKS -->
+        <section class="showcase-flow-deck">
+            <div class="showcase-header-row">
+                <span class="showcase-title-main">Polo Gastronómico</span>
+                <span class="showcase-sub-tag">Morfi &amp; Snacks</span>
+            </div>
+
+            <div class="horizontal-snap-carousel">
+
+                <a href="https://www.instagram.com/pizzarisata" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Horno de Barro</span>
+                        <img src="foodtrucks.png" alt="Risata Pizza" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Risata</span>
+                    <span class="card-meta-text">Pizzas napolitanas</span>
+                </a>
+
+                <a href="https://www.instagram.com/chickentruck2019" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Crispy</span>
+                        <img src="foodtrucks.png" alt="Chicken Truck" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Chicken Truck</span>
+                    <span class="card-meta-text">Pollo frito &amp; snacks</span>
+                </a>
+
+                <a href="https://www.instagram.com/donjacintotruck" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Salteñas</span>
+                        <img src="foodtrucks.png" alt="Don Jacinto" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Don Jacinto</span>
+                    <span class="card-meta-text">Empanadas de autor</span>
+                </a>
+
+                <a href="https://www.instagram.com/backerhaus" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Panadería</span>
+                        <img src="foodtrucks.png" alt="Bäckerhaus" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Bäckerhaus</span>
+                    <span class="card-meta-text">Sandwiches &amp; Street Food</span>
+                </a>
+
+                <a href="https://www.instagram.com/scrofa_food_truck" target="_blank" rel="noopener noreferrer" class="brewery-card-tile" onclick="playTap()">
+                    <div class="card-poster-frame">
+                        <span class="card-corner-badge">Gourmet</span>
+                        <img src="foodtrucks.png" alt="Scrofa Food Truck" loading="lazy">
+                    </div>
+                    <span class="card-title-text">Scrofa</span>
+                    <span class="card-meta-text">Bondiolas &amp; Burgers</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- 6. GALERÍA SOCIAL PROOF: AMBIENTE DEL MUSEO -->
+        <article class="live-photo-deck">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <h3 class="showcase-title-main" style="font-size:1.05rem;">Galería del Encuentro</h3>
+                <span style="font-family: var(--font-mono); font-size:0.65rem; color: var(--color-gold); font-weight:800;">#ELBIRRAZO</span>
+            </div>
+
+            <div class="gallery-track-slider">
+                <div class="gallery-photo-item">
+                    <img src="_DSC1078.jpg" alt="Tirada de birra fresca" loading="lazy">
+                    <span class="photo-floating-caption">Tirada Fresca</span>
+                </div>
+                <div class="gallery-photo-item">
+                    <img src="_DSC1082.jpg" alt="Pinta con neón" loading="lazy">
+                    <span class="photo-floating-caption">Pinta &amp; Neón</span>
+                </div>
+                <div class="gallery-photo-item">
+                    <img src="3.jpg" alt="Amigos brindando" loading="lazy">
+                    <span class="photo-floating-caption">Comunidad</span>
+                </div>
+                <div class="gallery-photo-item">
+                    <img src="4.jpg" alt="Morfi & Birra" loading="lazy">
+                    <span class="photo-floating-caption">Brindis</span>
+                </div>
+                <div class="gallery-photo-item">
+                    <img src="1.jpg" alt="Galpón Museo" loading="lazy">
+                    <span class="photo-floating-caption">Museo Noche</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- 7. SECCIÓN INSTITUCIONAL: COPA LIGA DEL CENTRO 2026 -->
+        <section class="copa-feature-card">
+            <div class="copa-badge-row">
+                <span class="pill-badge-seal" style="border-color: var(--color-gold);">🏆 Competencia Oficial</span>
+                <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--color-text-muted);">Agosto 2026</span>
+            </div>
+
+            <div>
+                <h3 class="copa-title">Copa Liga del Centro</h3>
+                <p style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 4px; line-height: 1.4;">
+                    Evaluación y premiación de las mejores cervezas del país por Beer Awards Platform. Inscripciones abiertas.
+                </p>
+            </div>
+
+            <div class="copa-buttons-row">
+                <a href="https://beerawardsplatform.com/copa-liga-del-centro-profesional-26" target="_blank" rel="noopener noreferrer" class="btn-copa-action" onclick="playTap()">
+                    Copa Profesional ↗
+                </a>
+                <a href="https://beerawardsplatform.com/copa-de-cervezas-liga-del-centro-homebrewer-2026" target="_blank" rel="noopener noreferrer" class="btn-copa-action" onclick="playTap()">
+                    Copa Homebrewer ↗
+                </a>
+            </div>
+        </section>
+
+        <!-- 8. FOOTER NOBLE & SELLOS -->
+        <footer class="footer-noble-deck">
+            <div class="footer-logos-stack">
+                <img src="CCIC LOGO BLANCO.png" alt="CCIC Logo" class="footer-logo-item">
+            </div>
+
+            <p style="font-size: 0.76rem; color: var(--color-text-muted); line-height: 1.45; max-width: 380px;">
+                <strong>Organizan:</strong> La Liga del Centro &amp; Cámara de Cerveceros Independientes de Córdoba (CCIC)<br>
+                <strong>Acompaña:</strong> Secretaría de Fortalecimiento Vecinal, Cultura y Deportes · Municipalidad de Córdoba
+            </p>
+
+            <p class="footer-legal-copy">
+                Museo de la Industria · C.P. 5000 · Córdoba, Argentina<br>
+                © 2026 EL BIRRAZO · TODOS LOS DERECHOS RESERVADOS
+            </p>
         </footer>
 
     </main>
 
-    <!-- MODAL TÁCTICO DE PLANES & RUTINAS -->
-    <div class="tactical-modal-backdrop" id="tacticalModal" onclick="closeTacticalModal(event)">
-        <div class="tactical-modal-window" onclick="event.stopPropagation()">
-            <div class="modal-banner-header">
-                <h3>// Salón & Disciplinas</h3>
-                <button type="button" class="btn-modal-exit" onclick="closeTacticalModal(event)">✕</button>
-            </div>
-            <div class="modal-scroll-area">
+    <!-- BOTÓN FLOTANTE CÓMO LLEGAR -->
+    <a href="https://maps.google.com/?q=Museo+de+la+Industria+Cordoba+Pringles" target="_blank" rel="noopener noreferrer" class="floating-action-portal" aria-label="Abrir mapa en Google Maps" onclick="playTap()">
+        <span class="floating-label-pill">Cómo llegar</span>
+        <div class="floating-circle-btn">📍</div>
+    </a>
 
-                <div class="training-spec-card">
-                    <h4>01 // Musculación & Hipertrofia <span class="nike-badge-pill hot">Fuerza</span></h4>
-                    <p>Zona con barras olímpicas, mancuernas sólidas y bancos ajustables. Para desarrollar masa muscular, postura y fuerza real con buena progresión.</p>
-                    <a href="https://wa.me/5493757000000?text=Hola%20Dynamic%20Gym%202!%20Quiero%20consultar%20por%20Musculaci%C3%B3n." target="_blank" class="btn-direct-book" onclick="playArcadeClick()">Consultar por WhatsApp ▶</a>
-                </div>
-
-                <div class="training-spec-card" style="border-left-color: var(--we-cyan);">
-                    <h4>02 // Máquinas y Poleas Guía <span class="nike-badge-pill" style="border-color:var(--we-cyan); color:var(--we-cyan);">Técnica</span></h4>
-                    <p>Prensa 45°, poleas para dorsales y estaciones guiadas para entrenar seguro y reducir impacto en articulaciones.</p>
-                    <a href="https://wa.me/5493757000000?text=Hola%20Dynamic%20Gym%202!%20Quiero%20consultar%20por%20las%20M%C3%A1quinas." target="_blank" class="btn-direct-book" onclick="playArcadeClick()">Consultar por WhatsApp ▶</a>
-                </div>
-
-                <div class="training-spec-card" style="border-left-color: var(--vt-yellow);">
-                    <h4>03 // Sector Cardio & Resistencia <span class="nike-badge-pill volt">Aeróbico</span></h4>
-                    <p>Cintas de correr y bicicletas para calentamiento o trabajo aeróbico continuo.</p>
-                    <a href="https://wa.me/5493757000000?text=Hola%20Dynamic%20Gym%202!%20Quiero%20consultar%20por%20Cardio." target="_blank" class="btn-direct-book" onclick="playArcadeClick()">Consultar por WhatsApp ▶</a>
-                </div>
-
-                <div class="training-spec-card" style="border-left-color: var(--border-crisp);">
-                    <h4>04 // Guía & Acompañamiento <span class="nike-badge-pill">Marisol Novi</span></h4>
-                    <p>Si estás empezando, te guiamos en la sala paso a paso para que aprendas la técnica correcta desde el primer día.</p>
-                    <a href="https://wa.me/5493757000000?text=Hola!%20Quiero%20empezar%20el%20gym%20desde%20cero,%20tienen%20rutina%20guiada?" target="_blank" class="btn-direct-book" onclick="playArcadeClick()">Pedir Asesoramiento ▶</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- SCRIPTS: WEB AUDIO SINTETIZADO, REPRODUCTOR DESDE /music/ & CANVAS CINÉTICO -->
+    <!-- CONTROLADOR JAVASCRIPT LIVIANO -->
     <script>
-        // =========================================================
-        // 1. SONIDOS ARCADE (WEB AUDIO API)
-        // =========================================================
-        let audioCtx = null;
-
-        function getAudio() {
-            if (!audioCtx) {
-                const Cls = window.AudioContext || window.webkitAudioContext;
-                if (Cls) audioCtx = new Cls();
+        function playTap() {
+            if ('vibrate' in navigator) {
+                try { navigator.vibrate(12); } catch(e) {}
             }
-            if (audioCtx && audioCtx.state === 'suspended') {
-                audioCtx.resume();
+        }
+
+        function toggleBirrazoTheme() {
+            playTap();
+            const body = document.body;
+            const current = body.getAttribute('data-theme') || 'default';
+            const next = current === 'default' ? 'lupulo' : 'default';
+            body.setAttribute('data-theme', next);
+
+            const label = document.getElementById('themeLabelText');
+            if (label) {
+                label.innerText = next === 'lupulo' ? 'Industrial Mode' : 'Lúpulo Mode';
             }
-            return audioCtx;
         }
 
-        function playArcadeClick() {
-            try {
-                if (navigator.vibrate) navigator.vibrate(10);
-                const ctx = getAudio();
-                if (!ctx) return;
+        function toggleVideoAudio() {
+            playTap();
+            const player = document.getElementById('birrazoVideoPlayer');
+            const btn = document.getElementById('audioToggleBtn');
+            if (!player || !btn) return;
 
-                const osc = ctx.createOscillator();
-                const gain = ctx.createGain();
-
-                osc.type = 'sine';
-                osc.frequency.setValueAtTime(540, ctx.currentTime);
-                osc.frequency.exponentialRampToValueAtTime(1080, ctx.currentTime + 0.05);
-
-                gain.gain.setValueAtTime(0.18, ctx.currentTime);
-                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.06);
-
-                osc.connect(gain);
-                gain.connect(ctx.destination);
-
-                osc.start();
-                osc.stop(ctx.currentTime + 0.06);
-            } catch(e) {}
-        }
-
-        // =========================================================
-        // 2. REPRODUCTOR DE MÚSICA AUTOMÁTICO (ESCANEO DE /music/)
-        // =========================================================
-        const gymAudio = new Audio();
-        const DEFAULT_MUSIC_VOL = 0.35;
-        gymAudio.volume = DEFAULT_MUSIC_VOL;
-
-        let musicPlaylist = [
-            "./music/Pro%20Evolution%20Soccer%206%20-%20Main%20Menu%20(Existence).mp3"
-        ];
-
-        let isMusicPlaying = false;
-        let currentTrackIdx = -1;
-        let musicFadeTimer = null;
-
-        async function loadMusicFromFolder() {
-            try {
-                const res = await fetch('https://api.github.com/repos/onceoncegrafica-1111/dynamicagym2/contents/music');
-                if (res.ok) {
-                    const files = await res.json();
-                    const tracks = files
-                        .filter(f => f.type === 'file' && f.name.toLowerCase().endsWith('.mp3'))
-                        .map(f => `./music/${encodeURIComponent(f.name)}`);
-                    if (tracks.length > 0) {
-                        musicPlaylist = tracks;
-                    }
-                }
-            } catch (e) {}
-        }
-
-        function playGymTrack(url, duration = 800) {
-            if (musicFadeTimer) clearInterval(musicFadeTimer);
-
-            gymAudio.src = url;
-            gymAudio.volume = 0;
-
-            gymAudio.play().then(() => {
-                isMusicPlaying = true;
-                updateAudioButtonUI(true);
-
-                const steps = 20;
-                const stepTime = duration / steps;
-                const volStep = DEFAULT_MUSIC_VOL / steps;
-
-                musicFadeTimer = setInterval(() => {
-                    if (gymAudio.volume + volStep < DEFAULT_MUSIC_VOL) {
-                        gymAudio.volume += volStep;
-                    } else {
-                        gymAudio.volume = DEFAULT_MUSIC_VOL;
-                        clearInterval(musicFadeTimer);
-                        musicFadeTimer = null;
-                    }
-                }, stepTime);
-            }).catch(() => {
-                isMusicPlaying = false;
-                updateAudioButtonUI(false);
-            });
-        }
-
-        function fadeOutGymMusic(duration = 400) {
-            if (musicFadeTimer) clearInterval(musicFadeTimer);
-
-            isMusicPlaying = false;
-            updateAudioButtonUI(false);
-
-            if (gymAudio.paused) return;
-
-            const steps = 15;
-            const stepTime = duration / steps;
-            const volStep = gymAudio.volume / steps;
-
-            musicFadeTimer = setInterval(() => {
-                if (gymAudio.volume - volStep > 0) {
-                    gymAudio.volume -= volStep;
-                } else {
-                    gymAudio.volume = 0;
-                    gymAudio.pause();
-                    clearInterval(musicFadeTimer);
-                    musicFadeTimer = null;
-                }
-            }, stepTime);
-        }
-
-        function updateAudioButtonUI(active) {
-            const pill = document.getElementById('audioPill');
-            const pillText = document.getElementById('audioPillText');
-            if (pill) pill.classList.toggle('active', active);
-            if (pillText) pillText.innerText = active ? "MÚSICA: ON" : "MÚSICA: OFF";
-        }
-
-        function toggleArcadeBeat() {
-            playArcadeClick();
-
-            if (!isMusicPlaying) {
-                if (musicPlaylist.length === 0) return;
-
-                let nextIdx;
-                do {
-                    nextIdx = Math.floor(Math.random() * musicPlaylist.length);
-                } while (nextIdx === currentTrackIdx && musicPlaylist.length > 1);
-
-                currentTrackIdx = nextIdx;
-                playGymTrack(musicPlaylist[currentTrackIdx], 900);
+            if (player.muted) {
+                player.muted = false;
+                btn.innerText = '🔈';
             } else {
-                fadeOutGymMusic(450);
+                player.muted = true;
+                btn.innerText = '🔊';
             }
         }
 
-        gymAudio.addEventListener('ended', () => {
-            if (isMusicPlaying) {
-                currentTrackIdx = (currentTrackIdx + 1) % musicPlaylist.length;
-                playGymTrack(musicPlaylist[currentTrackIdx], 800);
-            }
-        });
-
-        gymAudio.addEventListener('error', () => {
-            if (isMusicPlaying && musicPlaylist.length > 1) {
-                currentTrackIdx = (currentTrackIdx + 1) % musicPlaylist.length;
-                playGymTrack(musicPlaylist[currentTrackIdx], 600);
-            }
-        });
-
-        // =========================================================
-        // 3. MODO OSCURO / MODO CLARO
-        // =========================================================
-        let isDarkMode = false;
-        function toggleSportsTheme() {
-            playArcadeClick();
-            isDarkMode = !isDarkMode;
-            document.body.classList.toggle('dark-mode', isDarkMode);
-
-            const themePill = document.getElementById('themePill');
-            const themePillText = document.getElementById('themePillText');
-
-            if (themePill) themePill.classList.toggle('active', isDarkMode);
-            if (themePillText) themePillText.innerText = isDarkMode ? "MODO CLARO" : "MODO OSCURO";
-
-            try {
-                localStorage.setItem('dg2_sports_theme', isDarkMode ? 'dark' : 'light');
-            } catch(e) {}
-        }
-
-        // =========================================================
-        // 4. CANVAS: ESTELAS CINÉTICAS AERODINÁMICAS
-        // =========================================================
-        const canvas = document.getElementById('motionCanvas');
-        const ctx = canvas.getContext('2d');
-
-        function resizeMotion() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-        window.addEventListener('resize', resizeMotion);
-        resizeMotion();
-
-        const STREAM_COUNT = 6;
-        let streams = [];
-
-        function initStreams() {
-            streams = [];
-            const laneWidth = (canvas.width + 600) / STREAM_COUNT;
-
-            for (let i = 0; i < STREAM_COUNT; i++) {
-                streams.push({
-                    baseX: i * laneWidth - 300,
-                    y: (Math.random() * canvas.height * 1.5) - 200,
-                    length: Math.random() * 450 + 500,
-                    thickness: Math.random() * 8 + 4,
-                    speed: (i % 2 === 0 ? 1.4 : 1.9) + (i * 0.15),
-                    waveFreq: 0.0035 + (i * 0.0008),
-                    waveAmp: 45 + (i * 8),
-                    phase: i * (Math.PI / 3),
-                    opacity: 0.12 + (i % 3 === 0 ? 0.08 : 0.02)
+        // FÍSICA MAGNÉTICA SUAVE
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+            document.querySelectorAll('.bento-cell, .brewery-card-tile, .organizer-pill-anchor').forEach(elem => {
+                elem.addEventListener('mousemove', (e) => {
+                    const rect = elem.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    elem.style.transform = `translate(${x * 0.02}px, ${y * 0.02 - 3}px)`;
                 });
-            }
-        }
-        initStreams();
-        window.addEventListener('resize', initStreams);
-
-        let globalClock = 0;
-
-        function renderHarmonicStreams() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            globalClock += 0.015;
-
-            streams.forEach((s, idx) => {
-                s.y -= s.speed;
-
-                if (s.y + s.length < -100) {
-                    s.y = canvas.height + 200;
-                }
-
-                const steps = 28;
-                const stepLength = s.length / steps;
-
-                ctx.save();
-                ctx.beginPath();
-
-                const colorTone = isDarkMode ? '255, 95, 20' : '255, 70, 0';
-
-                for (let k = 0; k <= steps; k++) {
-                    const currentY = s.y + (k * stepLength);
-                    const lateralDrift = (canvas.height - currentY) * 0.45;
-                    const wave = Math.sin(currentY * s.waveFreq + globalClock + s.phase) * s.waveAmp;
-                    const currentX = s.baseX + lateralDrift + wave;
-
-                    if (k === 0) {
-                        ctx.moveTo(currentX, currentY);
-                    } else {
-                        ctx.lineTo(currentX, currentY);
-                    }
-                }
-
-                const grad = ctx.createLinearGradient(0, s.y, 0, s.y + s.length);
-                grad.addColorStop(0, `rgba(${colorTone}, 0)`);
-                grad.addColorStop(0.35, `rgba(${colorTone}, ${s.opacity * 1.5})`);
-                grad.addColorStop(0.7, `rgba(${colorTone}, ${s.opacity})`);
-                grad.addColorStop(1, `rgba(${colorTone}, 0)`);
-
-                ctx.strokeStyle = grad;
-                ctx.lineWidth = s.thickness;
-                ctx.lineCap = 'round';
-                ctx.stroke();
-
-                if (idx % 2 === 0) {
-                    ctx.strokeStyle = isDarkMode ? 'rgba(255, 215, 0, 0.22)' : 'rgba(255, 255, 255, 0.45)';
-                    ctx.lineWidth = s.thickness * 0.35;
-                    ctx.stroke();
-                }
-
-                ctx.restore();
+                elem.addEventListener('mouseleave', () => {
+                    elem.style.transform = '';
+                });
             });
-
-            requestAnimationFrame(renderHarmonicStreams);
         }
-        requestAnimationFrame(renderHarmonicStreams);
-
-        // =========================================================
-        // 5. HORARIOS OFICIALES EN VIVO (PUERTO IGUAZÚ UTC-3)
-        // =========================================================
-        function updateLiveSchedule() {
-            const now = new Date();
-            const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-            const iguazuTime = new Date(utc - (3600000 * 3));
-
-            const day = iguazuTime.getDay(); // 0 = Dom, 1-5 = Lun-Vie, 6 = Sáb
-            const currentHour = iguazuTime.getHours() + (iguazuTime.getMinutes() / 60);
-
-            const pill = document.getElementById('liveMatchPill');
-            const rowMonFri = document.getElementById('row-mon-fri');
-            const rowSat = document.getElementById('row-sat');
-            const rowSun = document.getElementById('row-sun');
-
-            if (rowMonFri) rowMonFri.classList.remove('active-today');
-            if (rowSat) rowSat.classList.remove('active-today');
-            if (rowSun) rowSun.classList.remove('active-today');
-
-            let isOpen = false;
-
-            if (day >= 1 && day <= 5) {
-                if (rowMonFri) rowMonFri.classList.add('active-today');
-                if ((currentHour >= 7.0 && currentHour < 11.5) || (currentHour >= 14.5 && currentHour < 21.5)) {
-                    isOpen = true;
-                }
-            } else if (day === 6) {
-                if (rowSat) rowSat.classList.add('active-today');
-                if (currentHour >= 8.0 && currentHour < 11.0) {
-                    isOpen = true;
-                }
-            } else {
-                if (rowSun) rowSun.classList.add('active-today');
-            }
-
-            if (isOpen) {
-                pill.innerText = "SALA ABIERTA";
-                pill.style.background = "var(--volt-pure)";
-                pill.style.color = "#000000";
-                pill.style.borderColor = "#000000";
-            } else {
-                pill.innerText = "CERRADO AHORA";
-                pill.style.background = "var(--bg-card-subtle)";
-                pill.style.color = "var(--text-secondary)";
-                pill.style.borderColor = "var(--border-crisp)";
-            }
-        }
-
-        // =========================================================
-        // 6. MODAL TÁCTICO
-        // =========================================================
-        const modalEl = document.getElementById('tacticalModal');
-        function openTacticalModal() { modalEl.classList.add('open'); }
-        function closeTacticalModal(e) {
-            modalEl.classList.remove('open');
-            playArcadeClick();
-        }
-
-        // INICIALIZACIÓN
-        document.addEventListener('DOMContentLoaded', () => {
-            updateLiveSchedule();
-            loadMusicFromFolder();
-
-            try {
-                if (localStorage.getItem('dg2_sports_theme') === 'dark') {
-                    toggleSportsTheme();
-                }
-            } catch(e) {}
-        });
     </script>
 </body>
 </html>
